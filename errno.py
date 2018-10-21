@@ -7,7 +7,7 @@ import re
 import requests
 
 
-GITHUB = "https://raw.githubusercontent.com"
+GITHUB = "https://raw.githubusercontent.com/"
 
 OS = [
     (
@@ -37,7 +37,7 @@ def get_cache_file(cache_file, url):
 
 
 def scrape_os(os_name, github_path, cache_file, errors={}):
-    for line in open(get_cache_file(cache_file, os.path.join(GITHUB, github_path))):
+    for line in open(get_cache_file(cache_file, GITHUB + github_path)):
         match = re.match(
             r"^#define\s+(E[A-Z\d]+)\s+([A-Z\d]+)\s+/\*\s*(.*?)\s*\*/", line
         )
