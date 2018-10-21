@@ -1,15 +1,15 @@
 Name,Linux,FreeBSD,OpenBSD,NetBSD,Solaris,Message
-E2BIG,,7,7,7,7,Arg list too long
-EACCES,,13,13,13,13,Permission denied
+E2BIG,7,7,7,7,7,Arg list too long
+EACCES,13,13,13,13,13,Permission denied
 EADDRINUSE,98,48,48,48,125,Address already in use
 EADDRNOTAVAIL,99,49,49,49,126,Can't assign requested address
 EADV,68,,,,68,advertise error
 EAFNOSUPPORT,97,47,47,47,124,Address family not supported by
-EAGAIN,,35,35,35,11,Resource temporarily unavailable
+EAGAIN,11,35,35,35,11,Resource temporarily unavailable
 EALREADY,114,37,37,37,149,operation already in progress
 EAUTH,,80,80,80,,Authentication error
 EBADE,52,,,,50,invalid exchange
-EBADF,,9,9,9,9,Bad file number
+EBADF,9,9,9,9,9,Bad file number
 EBADFD,77,,,,81,f.d. invalid for this operation
 EBADMSG,74,89,92,88,77,trying to read unreadable message
 EBADR,53,,,,51,invalid request descriptor
@@ -17,10 +17,10 @@ EBADRPC,,72,72,72,,RPC struct is bad
 EBADRQC,56,,,,54,invalid request code
 EBADSLT,57,,,,55,invalid slot
 EBFONT,59,,,,57,bad font file fmt
-EBUSY,,16,16,16,16,Mount device busy
+EBUSY,16,16,16,16,16,Mount device busy
 ECANCELED,125,85,88,87,47,Operation canceled
 ECAPMODE,,94,,,,Not permitted in capability mode
-ECHILD,,10,10,10,10,No children
+ECHILD,10,10,10,10,10,No children
 ECHRNG,44,,,,37,Channel number out of range
 ECOMM,70,,,,70,Communication error on send
 ECONNABORTED,103,53,53,53,130,Software caused connection abort
@@ -29,13 +29,13 @@ ECONNRESET,104,54,54,54,131,Connection reset by peer
 EDEADLK,35,11,11,11,45,Deadlock condition.
 EDEADLOCK,,,,,56,file locking deadlock error
 EDESTADDRREQ,89,39,39,39,96,Destination address required
-EDOM,,33,33,33,33,Math arg out of domain of func
+EDOM,33,33,33,33,33,Math arg out of domain of func
 EDOOFUS,,88,,,,Programming error
 EDOTDOT,73,,,,,RFS specific error
 EDQUOT,122,69,69,69,49,Disc quota exceeded
-EEXIST,,17,17,17,17,File exists
-EFAULT,,14,14,14,14,Bad address
-EFBIG,,27,27,27,27,File too large
+EEXIST,17,17,17,17,17,File exists
+EFAULT,14,14,14,14,14,Bad address
+EFBIG,27,27,27,27,27,File too large
 EFTYPE,,79,79,79,,Inappropriate file type or format
 EHOSTDOWN,112,64,64,64,147,Host is down
 EHOSTUNREACH,113,65,65,65,148,No route to host
@@ -43,12 +43,12 @@ EHWPOISON,133,,,,,Memory page has hardware error
 EIDRM,43,82,89,82,36,Identifier removed
 EILSEQ,84,86,84,85,88,Illegal byte sequence.
 EINPROGRESS,115,36,36,36,150,operation now in progress
-EINTR,,4,4,4,4,interrupted system call
-EINVAL,,22,22,22,22,Invalid argument
-EIO,,5,5,5,5,I/O error
+EINTR,4,4,4,4,4,interrupted system call
+EINVAL,22,22,22,22,22,Invalid argument
+EIO,5,5,5,5,5,I/O error
 EIPSEC,,,82,,,IPsec processing failure
 EISCONN,106,56,56,56,133,Socket is already connected
-EISDIR,,21,21,21,21,Is a directory
+EISDIR,21,21,21,21,21,Is a directory
 EISNAM,120,,,,,Is a named type file
 EKEYEXPIRED,127,,,,,Key has expired
 EKEYREJECTED,129,,,,,Key was rejected by service
@@ -67,8 +67,8 @@ ELNRNG,48,,,,41,Link number out of range
 ELOCKUNMAPPED,,,,,72,locked lock was unmapped
 ELOOP,40,62,62,62,90,Symbolic link loop
 EMEDIUMTYPE,124,,86,,,Wrong medium type
-EMFILE,,24,24,24,24,Too many open files
-EMLINK,,31,31,31,31,Too many links
+EMFILE,24,24,24,24,24,Too many open files
+EMLINK,31,31,31,31,31,Too many links
 EMSGSIZE,90,40,40,40,97,Message too long
 EMULTIHOP,72,90,,94,74,multihop attempted
 ENAMETOOLONG,36,63,63,63,78,path name is too long
@@ -77,47 +77,47 @@ ENEEDAUTH,,81,81,81,,Need authenticator
 ENETDOWN,100,50,50,50,127,Network is down
 ENETRESET,102,52,52,52,129,Network dropped connection because
 ENETUNREACH,101,51,51,51,128,Network is unreachable
-ENFILE,,23,23,23,23,File table overflow
+ENFILE,23,23,23,23,23,File table overflow
 ENOANO,55,,,,53,no anode
 ENOATTR,,87,83,93,,Attribute not found
 ENOBUFS,105,55,55,55,132,No buffer space available
 ENOCSI,50,,,,43,No CSI structure available
 ENODATA,61,,,89,61,no data (for no delay io)
-ENODEV,,19,19,19,19,No such device
-ENOENT,,2,2,2,2,No such file or directory
-ENOEXEC,,8,8,8,8,Exec format error
+ENODEV,19,19,19,19,19,No such device
+ENOENT,2,2,2,2,2,No such file or directory
+ENOEXEC,8,8,8,8,8,Exec format error
 ENOKEY,126,,,,,Required key not available
 ENOLCK,37,77,77,77,46,No record locks available.
 ENOLINK,67,91,,95,67,the link has been severed
 ENOMEDIUM,123,,85,,,No medium found
-ENOMEM,,12,12,12,12,Not enough core
+ENOMEM,12,12,12,12,12,Not enough core
 ENOMSG,42,83,90,83,35,No message of desired type
 ENONET,64,,,,64,Machine is not on the network
 ENOPKG,65,,,,65,Package not installed
 ENOPROTOOPT,92,42,42,42,99,Protocol not available
-ENOSPC,,28,28,28,28,No space left on device
+ENOSPC,28,28,28,28,28,No space left on device
 ENOSR,63,,,90,63,out of streams resources
 ENOSTR,60,,,91,60,Device not a stream
 ENOSYS,38,78,78,78,89,Unsupported file system operation
 ENOTACTIVE,,,,,73,Facility is not active
-ENOTBLK,,15,15,15,15,Block device required
+ENOTBLK,15,15,15,15,15,Block device required
 ENOTCAPABLE,,93,,,,Capabilities insufficient
 ENOTCONN,107,57,57,57,134,Socket is not connected
-ENOTDIR,,20,20,20,20,Not a directory
+ENOTDIR,20,20,20,20,20,Not a directory
 ENOTEMPTY,39,66,66,66,93,directory not empty
 ENOTNAM,118,,,,,Not a XENIX named type file
 ENOTRECOVERABLE,131,95,93,,59,lock is not recoverable
 ENOTSOCK,88,38,38,38,95,Socket operation on non-socket
 ENOTSUP,,EOPNOTSUPP,91,86,48,Operation not supported
-ENOTTY,,25,25,25,25,Inappropriate ioctl for device
+ENOTTY,25,25,25,25,25,Inappropriate ioctl for device
 ENOTUNIQ,76,,,,80,given log. name not unique
-ENXIO,,6,6,6,6,No such device or address
+ENXIO,6,6,6,6,6,No such device or address
 EOPNOTSUPP,95,45,45,45,122,Operation not supported on socket
 EOVERFLOW,75,84,87,84,79,value too large to be stored in data type
 EOWNERDEAD,130,96,94,,58,process died with the lock
-EPERM,,1,1,1,1,Not super-user
+EPERM,1,1,1,1,1,Not super-user
 EPFNOSUPPORT,96,46,46,46,123,Protocol family not supported
-EPIPE,,32,32,32,32,Broken pipe
+EPIPE,32,32,32,32,32,Broken pipe
 EPROCLIM,,67,67,67,,Too many processes
 EPROCUNAVAIL,,76,76,76,,Bad procedure for program
 EPROGMISMATCH,,75,75,75,,Program version wrong
@@ -125,28 +125,28 @@ EPROGUNAVAIL,,74,74,74,,RPC prog. not avail
 EPROTO,71,92,95,96,71,Protocol error
 EPROTONOSUPPORT,93,43,43,43,120,Protocol not supported
 EPROTOTYPE,91,41,41,41,98,Protocol wrong type for socket
-ERANGE,,34,34,34,34,Math result not representable
+ERANGE,34,34,34,34,34,Math result not representable
 EREMCHG,78,,,,82,Remote address changed
 EREMOTE,66,71,71,71,66,The object is remote
 EREMOTEIO,121,,,,,Remote I/O error
 ERESTART,85,,,,91,Restartable system call
 ERFKILL,132,,,,,Operation not possible due to RF-kill
-EROFS,,30,30,30,30,Read only file system
+EROFS,30,30,30,30,30,Read only file system
 ERPCMISMATCH,,73,73,73,,RPC version wrong
 ESHUTDOWN,108,58,58,58,143,Can't send after socket shutdown
 ESOCKTNOSUPPORT,94,44,44,44,121,Socket type not supported
-ESPIPE,,29,29,29,29,Illegal seek
-ESRCH,,3,3,3,3,No such process
+ESPIPE,29,29,29,29,29,Illegal seek
+ESRCH,3,3,3,3,3,No such process
 ESRMNT,69,,,,69,srmount error
 ESTALE,116,70,70,70,151,Stale NFS file handle
 ESTRPIPE,86,,,,92,"if pipe/FIFO, don't sleep in stream head"
 ETIME,62,,,92,62,timer expired
 ETIMEDOUT,110,60,60,60,145,Connection timed out
 ETOOMANYREFS,109,59,59,59,144,Too many references: can't splice
-ETXTBSY,,26,26,26,26,Text file busy
+ETXTBSY,26,26,26,26,26,Text file busy
 EUCLEAN,117,,,,,Structure needs cleaning
 EUNATCH,49,,,,42,Protocol driver not attached
 EUSERS,87,68,68,68,94,Too many users (for UFS)
 EWOULDBLOCK,EAGAIN,EAGAIN,EAGAIN,EAGAIN,,Operation would block
-EXDEV,,18,18,18,18,Cross-device link
+EXDEV,18,18,18,18,18,Cross-device link
 EXFULL,54,,,,52,exchange full
