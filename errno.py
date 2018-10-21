@@ -26,12 +26,18 @@ OS = [
 COLUMNS = ["Name"] + [os[0] for os in OS] + ["Message"]
 
 
-def scrape_os(os_name, github_path, cache_file, errors={}):
+def get_cache_file(cache_file, url):
+    cache_file = os.path.join(os.path.dirname(__file__), ".cache", cache_file)
+    os.makedirs(os.path.dirname(cache_file), exist_ok=True)
     if not os.path.exists(cache_file):
-        r = requests.get(os.path.join(GITHUB, github_path))
+        r = requests.get(url)
         r.raise_for_status()
         open(cache_file, "w").write(r.text)
-    for line in open(cache_file):
+    return cache_file
+
+
+def scrape_os(os_name, github_path, cache_file, errors={}):
+    for line in open(get_cache_file(cache_file, os.path.join(GITHUB, github_path))):
         match = re.match(
             r"^#define\s+(E[A-Z\d]+)\s+([A-Z\d]+)\s+/\*\s*(.*?)\s*\*/", line
         )
@@ -49,12 +55,7 @@ def scrape_all():
     for os_name, github_paths in OS:
         for i, github_path in enumerate(github_paths):
             cache_file = "errno-{}{}.h".format(os_name.lower(), i or "")
-            scrape_os(
-                os_name,
-                github_path,
-                os.path.join(os.path.dirname(__file__), cache_file),
-                errors,
-            )
+            scrape_os(os_name, github_path, cache_file, errors)
     return errors
 
 

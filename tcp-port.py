@@ -14,6 +14,16 @@ COLUMNS = ["Port", "Service", "Description"]
 PORT_RANGE = re.compile(r"^(\d+)-(\d+)$")
 
 
+def get_cache_file(cache_file, url):
+    cache_file = os.path.join(os.path.dirname(__file__), ".cache", cache_file)
+    os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+    if not os.path.exists(cache_file):
+        r = requests.get(url)
+        r.raise_for_status()
+        open(cache_file, "w").write(r.text)
+    return cache_file
+
+
 def scrape_port(port_number, service_name, description, ports={}):
     description = description.splitlines()[0] if description else ""
     if description.lower() == "unassigned":
@@ -29,12 +39,8 @@ def scrape_port(port_number, service_name, description, ports={}):
 
 
 def scrape_all():
-    if not os.path.exists(CACHE_FILE):
-        r = requests.get(URL)
-        r.raise_for_status()
-        open(CACHE_FILE, "w").write(r.text)
     ports = {}
-    with open(CACHE_FILE, newline="") as csvfile:
+    with open(get_cache_file(CACHE_FILE, URL), newline="") as csvfile:
         reader = csv.reader(csvfile)
         for header_row in reader:
             break
