@@ -16,6 +16,8 @@ PORT_RANGE = re.compile(r"^(\d+)-(\d+)$")
 
 def scrape_port(port_number, service_name, description, ports={}):
     description = description.splitlines()[0] if description else ""
+    if description.lower() == "unassigned":
+        return
     prior = ports.get(port_number)
     prior_description = prior[COLUMNS.index("Description")] if prior else description
     if description != prior_description:
@@ -24,7 +26,6 @@ def scrape_port(port_number, service_name, description, ports={}):
         print(repr(description))
         print()
     ports[port_number] = [port_number, service_name, description]
-    return ports
 
 
 def scrape_all():
