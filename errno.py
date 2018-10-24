@@ -22,15 +22,14 @@ OS = [
 ]
 
 COLUMNS = ["Name"] + [os[0] for os in OS] + ["Message"]
+DEFINE = re.compile(r"^#define\s+(E[A-Z\d]+)\s+([A-Z\d]+)\s+/\*\s*(.*?)\s*\*/")
 
 
 def scrape_os(os_name, github_path, cache_file, errors={}):
     for line in open(util.get_cache_file(cache_file, GITHUB + github_path)):
-        match = re.match(
-            r"^#define\s+(E[A-Z\d]+)\s+([A-Z\d]+)\s+/\*\s*(.*?)\s*\*/", line
-        )
-        if match:
-            name, code, message = match.group(1), match.group(2), match.group(3)
+        define = DEFINE.match(line)
+        if define:
+            name, code, message = define.group(1), define.group(2), define.group(3)
             errors[name] = errors.get(name, [""] * len(COLUMNS))
             errors[name][COLUMNS.index("Name")] = name
             errors[name][COLUMNS.index("Message")] = message
