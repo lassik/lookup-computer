@@ -1,27 +1,14 @@
 #! /usr/bin/env python3
 
-import csv
 import html.parser
-import os
 
-import requests
+import util
 
 
 CSS3_URL = "https://www.w3.org/TR/css-color-3/"
 CSS3_CACHE = "color-css3.html"
 
-OUTPUT_FILE = "color.csv"
 COLUMNS = ["Web", "Hex6", "R,G,B"]
-
-
-def get_cache_file(cache_file, url):
-    cache_file = os.path.join(os.path.dirname(__file__), ".cache", cache_file)
-    os.makedirs(os.path.dirname(cache_file), exist_ok=True)
-    if not os.path.exists(cache_file):
-        r = requests.get(url)
-        r.raise_for_status()
-        open(cache_file, "w").write(r.text)
-    return cache_file
 
 
 class CSS3SpecificationParser(html.parser.HTMLParser):
@@ -53,7 +40,7 @@ class CSS3SpecificationParser(html.parser.HTMLParser):
 
 def scrape_css3():
     parser = CSS3SpecificationParser()
-    parser.feed(open(get_cache_file(CSS3_CACHE, CSS3_URL)).read())
+    parser.feed(open(util.get_cache_file(CSS3_CACHE, CSS3_URL)).read())
     return parser.colors
 
 
@@ -61,13 +48,5 @@ def scrape_all():
     return [(a, b, c) for a, (b, c) in sorted(scrape_css3().items())]
 
 
-def write_csv(rows):
-    with open(OUTPUT_FILE, "w", newline="") as csvfile:
-        wr = csv.writer(csvfile, lineterminator="\n")
-        wr.writerow(COLUMNS)
-        for row in sorted(rows):
-            wr.writerow(row)
-
-
 if __name__ == "__main__":
-    write_csv(scrape_all())
+    util.write_csv(COLUMNS, scrape_all())

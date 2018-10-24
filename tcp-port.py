@@ -1,27 +1,15 @@
 #! /usr/bin/env python3
 
 import csv
-import os
 import re
 
-import requests
+import util
 
 
 URL = "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv"
 CACHE_FILE = "tcp-port-iana.csv"
-OUTPUT_FILE = "tcp-port.csv"
 COLUMNS = ["Port", "Service", "Description"]
 PORT_RANGE = re.compile(r"^(\d+)-(\d+)$")
-
-
-def get_cache_file(cache_file, url):
-    cache_file = os.path.join(os.path.dirname(__file__), ".cache", cache_file)
-    os.makedirs(os.path.dirname(cache_file), exist_ok=True)
-    if not os.path.exists(cache_file):
-        r = requests.get(url)
-        r.raise_for_status()
-        open(cache_file, "w").write(r.text)
-    return cache_file
 
 
 def scrape_port(port_number, service_name, description, ports={}):
@@ -40,7 +28,7 @@ def scrape_port(port_number, service_name, description, ports={}):
 
 def scrape_all():
     ports = {}
-    with open(get_cache_file(CACHE_FILE, URL), newline="") as csvfile:
+    with open(util.get_cache_file(CACHE_FILE, URL), newline="") as csvfile:
         reader = csv.reader(csvfile)
         for header_row in reader:
             break
@@ -60,13 +48,5 @@ def scrape_all():
     return [row for _, row in sorted(ports.items())]
 
 
-def write_csv(ports):
-    with open(OUTPUT_FILE, "w", newline="") as csvfile:
-        wr = csv.writer(csvfile, lineterminator="\n")
-        wr.writerow(COLUMNS)
-        for port_row in ports:
-            wr.writerow(port_row)
-
-
 if __name__ == "__main__":
-    write_csv(scrape_all())
+    util.write_csv(COLUMNS, scrape_all())

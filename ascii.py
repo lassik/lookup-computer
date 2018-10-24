@@ -1,11 +1,10 @@
 #! /usr/bin/env python3
 
-import csv
-import os
 import unicodedata
 
+import util
 
-OUTPUT_FILE = "ascii.csv"
+
 COLUMNS = ["Binary", "Octal", "Decimal", "Hex", "Display", "Unicode"]
 
 
@@ -41,13 +40,5 @@ def scrape_all():
     return [char_row(i) for i in range(128)]
 
 
-def write_csv(rows):
-    with open(OUTPUT_FILE, "w", newline="") as csvfile:
-        wr = csv.writer(csvfile, lineterminator="\n")
-        wr.writerow(COLUMNS)
-        for row in sorted(rows):
-            wr.writerow(row)
-
-
 if __name__ == "__main__":
-    write_csv(scrape_all())
+    util.write_csv(COLUMNS, scrape_all())

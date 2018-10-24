@@ -1,10 +1,8 @@
 #! /usr/bin/env python3
 
-import csv
-import os
 import re
 
-import requests
+import util
 
 
 GITHUB = "https://raw.githubusercontent.com/"
@@ -26,18 +24,8 @@ OS = [
 COLUMNS = ["Name"] + [os[0] for os in OS] + ["Message"]
 
 
-def get_cache_file(cache_file, url):
-    cache_file = os.path.join(os.path.dirname(__file__), ".cache", cache_file)
-    os.makedirs(os.path.dirname(cache_file), exist_ok=True)
-    if not os.path.exists(cache_file):
-        r = requests.get(url)
-        r.raise_for_status()
-        open(cache_file, "w").write(r.text)
-    return cache_file
-
-
 def scrape_os(os_name, github_path, cache_file, errors={}):
-    for line in open(get_cache_file(cache_file, GITHUB + github_path)):
+    for line in open(util.get_cache_file(cache_file, GITHUB + github_path)):
         match = re.match(
             r"^#define\s+(E[A-Z\d]+)\s+([A-Z\d]+)\s+/\*\s*(.*?)\s*\*/", line
         )
@@ -54,18 +42,10 @@ def scrape_all():
     errors = {}
     for os_name, github_paths in OS:
         for i, github_path in enumerate(github_paths):
-            cache_file = "errno-{}{}.h".format(os_name.lower(), i or "")
+            cache_file = "{}{}.h".format(os_name.lower(), i or "")
             scrape_os(os_name, github_path, cache_file, errors)
-    return errors
-
-
-def write_csv(errors):
-    with open("errno.csv", "w", newline="") as csvfile:
-        wr = csv.writer(csvfile, lineterminator="\n")
-        wr.writerow(COLUMNS)
-        for _, error in sorted(errors.items()):
-            wr.writerow(error)
+    return [row for _, row in sorted(errors.items())]
 
 
 if __name__ == "__main__":
-    write_csv(scrape_all())
+    util.write_csv(COLUMNS, scrape_all())
