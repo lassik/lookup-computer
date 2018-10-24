@@ -1,8 +1,8 @@
 import csv
 import os
+import shutil
 import sys
-
-import requests
+import urllib.request
 
 
 def _get_main_filename():
@@ -23,9 +23,9 @@ def get_cache_file(cache_file, url):
     cache_file = _get_cache_filename(cache_file)
     os.makedirs(os.path.dirname(cache_file), exist_ok=True)
     if not os.path.exists(cache_file):
-        r = requests.get(url)
-        r.raise_for_status()
-        open(cache_file, "w").write(r.text)
+        with urllib.request.urlopen(url) as response:
+            with open(cache_file, "wb") as output:
+                shutil.copyfileobj(response, output)
     return cache_file
 
 
