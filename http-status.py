@@ -6,7 +6,7 @@ import re
 import util
 
 
-URL = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_HTTP_status_codes&prop=wikitext&format=json"
+URL = "https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext&format=json&page=List_of_HTTP_status_codes"
 CACHE = "api.json"
 COLUMNS = ["Code", "Message"]
 
