@@ -1,0 +1,932 @@
+RFC,Title
+1,Host Software. S. Crocker. April 1969.
+2,Host software. B. Duvall. April 1969.
+3,Documentation conventions. S.D. Crocker. April 1969.
+4,Network timetable. E.B. Shapiro. March 1969.
+5,Decode Encode Language (DEL). J. Rulifson. June 1969.
+6,Conversation with Bob Kahn. S.D. Crocker. April 1969.
+7,Host-IMP interface. G. Deloche. May 1969.
+9,Host Software. G. Deloche. May 1969.
+10,Documentation conventions. S.D. Crocker. July 1969.
+13,Zero Text Length EOF Message. V. Cerf. August 1969.
+16,M.I.T. S. Crocker. August 1969.
+21,Network meeting. V.G. Cerf. October 1969.
+22,Host-host control message formats. V.G. Cerf. October 1969.
+24,Documentation Conventions. S.D. Crocker. November 1969.
+25,No High Link Numbers. S.D. Crocker. October 1969.
+27,Documentation Conventions. S.D. Crocker. December 1969.
+28,Time Standards. W.K. English. January 1970.
+29,Response to RFC 28. R.E. Kahn. January 1970.
+30,Documentation Conventions. S.D. Crocker. February 1970.
+33,New Host-Host Protocol. S.D. Crocker. February 1970.
+35,Network Meeting. S.D. Crocker. March 1970.
+36,Protocol Notes. S.D. Crocker. March 1970.
+37,"Network Meeting Epilogue, etc. S.D. Crocker. March 1970."
+41,IMP-IMP Teletype Communication. J.T. Melvin. March 1970.
+42,Message Data Types. E. Ancona. March 1970.
+43,Proposed Meeting. A.G. Nemeth. April 1970.
+46,ARPA Network protocol notes. E. Meyer. April 1970.
+49,Conversations with S. Crocker (UCLA). E. Meyer. April 1970.
+53,Official protocol mechanism. S.D. Crocker. June 1970.
+58,Logical Message Synchronization. T.P. Skinner. June 1970.
+60,A Simplified NCP Protocol. R. Kalin. July 1970.
+63,Belated Network Meeting Report. V.G. Cerf. July 1970.
+64,Getting rid of marking. M. Elie. July 1970.
+70,Note on Padding. S.D. Crocker. October 1970.
+73,Response to NWG/RFC 67. S.D. Crocker. September 1970.
+75,Network Meeting. S.D. Crocker. October 1970.
+77,Network meeting report. J. Postel. November 1970.
+79,Logger Protocol error. E. Meyer. November 1970.
+82,Network Meeting Notes. E. Meyer. December 1970.
+84,List of NWG/RFC's 1-80. J.B. North. December 1970.
+85,Network Working Group meeting. S.D. Crocker. December 1970.
+90,CCN as a Network Service Center. R.T. Braden. January 1971.
+91,Proposed User-User Protocol. G.H. Mealy. December 1970.
+93,Initial Connection Protocol. A.M. McKenzie. January 1971.
+99,Network Meeting. P.M. Karp. February 1971.
+104,"Link 191. J.B. Postel, S.D. Crocker. February 1971."
+111,Pressure from the Chairman. S.D. Crocker. March 1971.
+114,File Transfer Protocol. A.K. Bhushan. April 1971.
+116,Structure of the May NWG Meeting. S.D. Crocker. April 1971.
+119,Network Fortran Subprograms. M. Krilanovich. April 1971.
+120,Network PL1 subprograms. M. Krilanovich. April 1971.
+121,Network on-line operators. M. Krilanovich. April 1971.
+123,Proffered Official ICP. S.D. Crocker. April 1971.
+124,Typographical error in RFC 107. J.T. Melvin. April 1971.
+127,Comments on RFC 123. J. Postel. April 1971.
+128,Bytes. J. Postel. April 1971.
+132,Typographical Error in RFC 107. J.E. White. April 1971.
+133,File Transfer and Error Recovery. R.L. Sunberg. April 1971.
+134,Network Graphics meeting. A. Vezza. April 1971.
+135,Response to NWG/RFC 110. W. Hathaway. April 1971.
+139,Discussion of Telnet Protocol. T.C. O'Sullivan. May 1971.
+140,Agenda for the May NWG meeting. S.D. Crocker. May 1971.
+144,Data sharing on computer networks. A. Shoshani. April 1971.
+147,Definition of a socket. J.M. Winett. May 1971.
+148,Comments on RFC 123. A.K. Bhushan. May 1971.
+149,Best Laid Plans. S.D. Crocker. May 1971.
+153,"SRI ARC-NIC status. J.T. Melvin, R.W. Watson. May 1971."
+154,Exposition Style. S.D. Crocker. May 1971.
+155,ARPA Network mailing lists. J.B. North. May 1971.
+162,NETBUGGER3. M. Kampe. May 1971.
+163,Data transfer protocols. V.G. Cerf. May 1971.
+168,ARPA Network mailing lists. J.B. North. May 1971.
+169,COMPUTER NETWORKS. S.D. Crocker. May 1971.
+178,Network graphic attention handling. I.W. Cotton. June 1971.
+179,Link Number Assignments. A.M. McKenzie. June 1971.
+180,File system questionnaire. A.M. McKenzie. June 1971.
+181,Modifications to RFC 177. J. McConnell. July 1971.
+184,Proposed graphic display modes. K.C. Kelley. July 1971.
+186,Network graphics loader. J.C. Michener. July 1971.
+189,Interim NETRJS specifications. R.T. Braden. July 1971.
+193,"NETWORK CHECKOUT. E. Harslem, J.F. Heafner. July 1971."
+196,Mail Box Protocol. R.W. Watson. July 1971.
+200,RFC list by number. J.B. North. August 1971.
+202,"Possible Deadlock in ICP. S.M. Wolfe, J. Postel. July 1971."
+203,Achieving reliable communication. R.B. Kalin. August 1971.
+204,Sockets in use. J. Postel. August 1971.
+208,Address tables. A.M. McKenzie. August 1971.
+209,Host/IMP interface documentation. B. Cosell. August 1971.
+210,Improvement of Flow Control. W. Conrad. August 1971.
+211,ARPA Network Mailing Lists. J.B. North. August 1971.
+213,IMP System change notification. B. Cosell. August 1971.
+214,Network checkpoint. E. Harslem. August 1971.
+219,User's View of the Datacomputer. R. Winter. September 1971.
+221,Mail Box Protocol: Version 2. R.W. Watson. August 1971.
+228,Clarification. D.C. Walden. September 1971.
+229,Standard host names. J. Postel. September 1971.
+235,Site status. E. Westheimer. September 1971.
+236,Standard host names. J. Postel. September 1971.
+237,NIC view of standard host names. R.W. Watson. October 1971.
+240,Site Status. A.M. McKenzie. September 1971.
+246,Network Graphics meeting. A. Vezza. October 1971.
+250,Some thoughts on file transfer. H. Brodie. October 1971.
+251,Weather data. D. Stern. October 1971.
+252,Network host status. E. Westheimer. October 1971.
+255,Status of network hosts. E. Westheimer. October 1971.
+256,IMPSYS change notification. B. Cosell. November 1971.
+266,Network host status. E. Westheimer. November 1971.
+267,Network Host Status. E. Westheimer. November 1971.
+268,Graphics facilities information. J. Postel. November 1971.
+271,IMP System change notifications. B. Cosell. January 1972.
+273,More on standard host names. R.W. Watson. October 1971.
+276,NIC course. R.W. Watson. November 1971.
+280,A Draft of Host Names. R.W. Watson. November 1971.
+282,Graphics meeting report. M.A. Padlipsky. December 1971.
+285,Network graphics. D. Huff. December 1971.
+287,Status of Network Hosts. E. Westheimer. December 1971.
+288,Network host status. E. Westheimer. January 1972.
+293,Network Host Status. E. Westheimer. January 1972.
+296,DS-1 Display System. D.E. Liddle. January 1972.
+297,TIP Message Buffers. D.C. Walden. January 1972.
+298,Network host status. E. Westheimer. February 1972.
+299,Information Management System. D. Hopkin. February 1972.
+300,ARPA Network mailing lists. J.B. North. January 1972.
+302,Exercising The ARPANET. R.F. Bryan. February 1972.
+305,Unknown Host Numbers. R. Alter. February 1972.
+306,Network host status. E. Westheimer. February 1972.
+307,Using network Remote Job Entry. E. Harslem. February 1972.
+308,ARPANET host availability data. M. Seriff. March 1972.
+313,Computer based instruction. T.C. O'Sullivan. March 1972.
+315,Network Host Status. E. Westheimer. March 1972.
+318,Telnet Protocols. J. Postel. April 1972.
+319,Network Host Status. E. Westheimer. March 1972.
+320,Workshop on Hard Copy Line Graphics. R. Reddy. March 1972.
+321,CBI Networking Activity at MITRE. P.M. Karp. March 1972.
+322,"Well known socket numbers. V. Cerf, J. Postel. March 1972."
+324,RJE Protocol meeting. J. Postel. April 1972.
+326,Network Host Status. E. Westheimer. April 1972.
+328,Suggested Telnet Protocol Changes. J. Postel. April 1972.
+330,Network Host Status. E. Westheimer. April 1972.
+331,IMP System Change Notification. J.M. McQuillan. April 1972.
+332,Network Host Status. E. Westheimer. April 1972.
+334,Network Use on May 8. A.M. McKenzie. May 1972.
+335,New Interface - IMP/360. R.F. Bryan. May 1972.
+336,Level 0 Graphic Input Protocol. I.W. Cotton. May 1972.
+340,Proposed Telnet Changes. T.C. O'Sullivan. May 1972.
+342,Network Host Status. E. Westheimer. May 1972.
+343,IMP System change notification. A.M. McKenzie. May 1972.
+344,Network Host Status. E. Westheimer. May 1972.
+346,Satellite Considerations. J. Postel. May 1972.
+347,Echo process. J. Postel. May 1972.
+348,Discard Process. J. Postel. May 1972.
+349,Proposed Standard Socket Numbers. J. Postel. May 1972.
+352,TIP Site Information Form. D. Crocker. June 1972.
+353,Network host status. E. Westheimer. June 1972.
+354,File Transfer Protocol. A.K. Bhushan. July 1972.
+355,Response to NWG/RFC 346. J. Davidson. June 1972.
+356,ARPA Network Control Center. R. Alter. June 1972.
+360,Proposed Remote Job Entry Protocol. C. Holland. June 1972.
+361,Deamon Processes on Host 106. R.D. Bressler. July 1972.
+362,Network Host Status. E. Westheimer. June 1972.
+365,Letter to All TIP Users. D.C. Walden. July 1972.
+366,Network Host Status. E. Westheimer. July 1972.
+367,Network host status. E. Westheimer. July 1972.
+370,Network Host Status. E. Westheimer. July 1972.
+373,Arbitrary Character Sets. J. McCarthy. July 1972.
+374,IMP System Announcement. A.M. McKenzie. July 1972.
+376,Network Host Status. E. Westheimer. August 1972.
+378,Traffic statistics (July 1972). A.M. McKenzie. August 1972.
+379,Using TSO at CCN. R. Braden. August 1972.
+386,"Letter to TIP users-2. B. Cosell, D.C. Walden. August 1972."
+388,NCP statistics. V. Cerf. August 1972.
+390,TSO Scenario. R.T. Braden. September 1972.
+399,SMFS Login and Logout. M. Krilanovich. September 1972.
+402,ARPA Network Mailing Lists. J.B. North. October 1972.
+405,Correction to RFC 404. A.M. McKenzie. October 1972.
+408,"NETBANK. A.D. Owen, J. Postel. October 1972."
+412,User FTP Documentation. G. Hicks. November 1972.
+415,Tenex bandwidth. H. Murray. November 1972.
+417,"Link usage violation. J. Postel, C. Kline. December 1972."
+420,CCA ICCC weather demo. H. Murray. January 1973.
+426,Reconnection Protocol. R. Thomas. January 1973.
+429,Character Generator Process. J. Postel. December 1972.
+432,Network logical map. N. Neigus. December 1972.
+433,Socket number list. J. Postel. December 1972.
+435,"Telnet issues. B. Cosell, D.C. Walden. January 1973."
+436,Announcement of RJS at UCSB. M. Krilanovich. January 1973.
+437,Data Reconfiguration Service at UCSB. E. Faeh. June 1973.
+439,PARRY encounters the DOCTOR. V. Cerf. January 1973.
+448,Print files in FTP. R.T. Braden. February 1973.
+452,TELNET Command at Host LL. J. Winett. February 1973.
+457,TIPUG. D.C. Walden. February 1973.
+459,Network questionnaires. W. Kantrowitz. February 1973.
+460,NCP survey. C. Kline. February 1973.
+464,Resource notebook framework. M.D. Kudlick. February 1973.
+468,FTP data compression. R.T. Braden. March 1973.
+469,Network mail meeting summary. M.D. Kudlick. March 1973.
+473,MIX and MIXAL?. D.C. Walden. February 1973.
+475,FTP and Network Mail System. A.K. Bhushan. March 1973.
+477,Remote Job Service at UCSB. M. Krilanovich. May 1973.
+479,Use of FTP by the NIC Journal. J.E. White. March 1973.
+480,Host-dependent FTP parameters. J.E. White. March 1973.
+485,MIX and MIXAL at UCSB. J.R. Pickens. March 1973.
+486,Data transfer revisited. R.D. Bressler. March 1973.
+487,Free file transfer. R.D. Bressler. April 1973.
+488,NLS classes at network sites. M.F. Auerbach. March 1973.
+490,Surrogate RJS for UCLA-CCN. J.R. Pickens. March 1973.
+491,"What is ""Free""?. M.A. Padlipsky. April 1973."
+492,Response to RFC 467. E. Meyer. April 1973.
+495,Telnet Protocol specifications. A.M. McKenzie. May 1973.
+497,Traffic Statistics (March 1973). A.M. McKenzie. April 1973.
+498,On mail service to CCN. R.T. Braden. April 1973.
+499,Harvard's network RJE. B.R. Reussow. April 1973.
+501,"Un-muddling ""free file transfer"". K.T. Pogran. May 1973."
+503,"Socket number list. N. Neigus, J. Postel. April 1973."
+506,FTP command naming problem. M.A. Padlipsky. June 1973.
+509,Traffic statistics (April 1973). A.M. McKenzie. April 1973.
+512,More on lost message detection. W. Hathaway. May 1973.
+514,Network make-work. W. Kantrowitz. June 1973.
+516,Lost message detection. J. Postel. May 1973.
+518,"ARPANET accounts. N. Vaughan, E.J. Feinler. June 1973."
+519,Resource Evaluation. J.R. Pickens. June 1973.
+521,Restricted use of IMP DDT. A.M. McKenzie. May 1973.
+522,Traffic Statistics (May 1973). A.M. McKenzie. June 1973.
+523,SURVEY is in operation again. A.K. Bhushan. June 1973.
+524,Proposed Mail Protocol. J.E. White. June 1973.
+527,ARPAWOCKY. R. Merryman. May 1973.
+530,Report on the Survey Project. A.K. Bhushan. June 1973.
+532,UCSD-CC Server-FTP facility. R.G. Merryman. July 1973.
+533,Message-ID numbers. D.C. Walden. July 1973.
+534,Lost message detection. D.C. Walden. July 1973.
+535,Comments on File Access Protocol. R. Thomas. July 1973.
+538,Traffic statistics (June 1973). A.M. McKenzie. July 1973.
+542,File Transfer Protocol. N. Neigus. August 1973.
+546,Tenex load averages for July 1973. R. Thomas. August 1973.
+550,NIC NCP experiment. L.P. Deutsch. August 1973.
+552,Single access to standard protocols. A.D. Owen. July 1973.
+556,Traffic Statistics (July 1973). A.M. McKenzie. August 1973.
+571,TENEX FTP PROBLEM. R. Braden. November 1973.
+576,Proposal for modifying linking. K. Victor. September 1973.
+577,Mail priority. D. Crocker. October 1973.
+587,Announcing New Telnet Options. J. Postel. November 1973.
+588,London Node Is Now Up. A. Stokes. October 1973.
+590,MULTICS address change. M.A. Padlipsky. November 1973.
+597,"Host status. N. Neigus, E.J. Feinler. December 1973."
+599,Update on NETRJS. R.T. Braden. December 1973.
+604,Assigned link numbers. J. Postel. December 1973.
+606,Host names on-line. L.P. Deutsch. December 1973.
+608,Host names on-line. M.D. Kudlick. January 1974.
+616,LATEST NETWORK MAPS. D. Walden. February 1973.
+617,Note on socket number assignment. E.A. Taft. February 1974.
+621,NIC user directories at SRI ARC. M.D. Kudlick. March 1974.
+622,Scheduling IMP/TIP down time. A.M. McKenzie. March 1974.
+635,Assessment of ARPANET protocols. V. Cerf. April 1974.
+640,Revised FTP reply codes. J. Postel. June 1974.
+643,Network Debugging Protocol. E. Mader. July 1974.
+651,Revised Telnet status option. D. Crocker. October 1974.
+661,Protocol information. J. Postel. November 1974.
+667,Host Ports. S.G. Chipman. December 1974.
+671,Note on Reconnection Protocol. R. Schantz. December 1974.
+678,Standard file formats. J. Postel. December 1974.
+681,Network UNIX. S. Holmgren. March 1975.
+686,Leaving well enough alone. B. Harvey. May 1975.
+691,One more try on the FTP. B. Harvey. June 1975.
+694,Protocol information. J. Postel. June 1975.
+697,CWD command of FTP. J. Lieb. July 1975.
+698,Telnet extended ASCII option. T. Mock. July 1975.
+706,On the junk mail problem. J. Postel. November 1975.
+717,Assigned Network Numbers. J. Postel. July 1976.
+719,Discussion on RCTE. J. Postel. July 1976.
+727,Telnet logout option. M.R. Crispin. April 1977.
+728,Minor pitfall in the Telnet Protocol. J.D. Day. April 1977.
+729,Telnet byte macro option. D. Crocker. May 1977.
+730,Extensible field addressing. J. Postel. May 1977.
+731,Telnet Data Entry Terminal option. J.D. Day. June 1977.
+734,SUPDUP Protocol. M.R. Crispin. October 1977.
+736,Telnet SUPDUP option. M.R. Crispin. October 1977.
+737,FTP extension: XSEN. K. Harrenstien. October 1977.
+738,Time server. K. Harrenstien. October 1977.
+739,Assigned numbers. J. Postel. November 1977.
+740,NETRJS Protocol. R.T. Braden. November 1977.
+742,NAME/FINGER Protocol. K. Harrenstien. December 1977.
+743,FTP extension: XRSQ/XRCP. K. Harrenstien. December 1977.
+745,JANUS interface specifications. M. Beeler. March 1978.
+746,SUPDUP graphics extension. R. Stallman. March 1978.
+748,Telnet randomly-lose option. M.R. Crispin. 1 April 1978.
+749,Telnet SUPDUP-Output option. B. Greenberg. September 1978.
+750,Assigned numbers. J. Postel. September 1978.
+751,Survey of FTP mail and MLFL. P.D. Lebling. December 1978.
+752,Universal host table. M.R. Crispin. January 1979.
+753,Internet Message Protocol. J. Postel. March 1979.
+754,Out-of-net host addresses for mail. J. Postel. April 1979.
+755,Assigned numbers. J. Postel. May 1979.
+758,Assigned numbers. J. Postel. August 1979.
+759,Internet Message Protocol. J. Postel. August 1980.
+760,DoD standard Internet Protocol. J. Postel. January 1980.
+762,Assigned numbers. J. Postel. January 1980.
+763,Role mailboxes. M.D. Abrams. May 1980.
+764,Telnet Protocol specification. J. Postel. June 1980.
+765,File Transfer Protocol specification. J. Postel. June 1980.
+768,User Datagram Protocol. J. Postel. August 1980.
+770,Assigned numbers. J. Postel. September 1980.
+771,"Mail transition plan. V.G. Cerf, J. Postel. September 1980."
+776,Assigned numbers. J. Postel. January 1981.
+777,Internet Control Message Protocol. J. Postel. April 1981.
+778,DCNET Internet Clock Service. D.L. Mills. April 1981.
+779,Telnet send-location option. E. Killian. April 1981.
+780,"Mail Transfer Protocol. S. Sluizer, J. Postel. May 1981."
+783,TFTP Protocol (revision 2). K.R. Sollins. June 1981.
+788,Simple Mail Transfer Protocol. J. Postel. November 1981.
+790,Assigned numbers. J. Postel. September 1981.
+791,Internet Protocol. J. Postel. September 1981.
+793,Transmission Control Protocol. J. Postel. September 1981.
+794,Pre-emption. V.G. Cerf. September 1981.
+795,Service mappings. J. Postel. September 1981.
+796,Address mappings. J. Postel. September 1981.
+797,Format for Bitmap files. A.R. Katz. September 1981.
+799,Internet name domains. D.L. Mills. September 1981.
+801,NCP/TCP transition plan. J. Postel. November 1981.
+805,Computer mail meeting notes. J. Postel. February 1982.
+807,Multimedia mail meeting notes. J. Postel. February 1982.
+809,UCL facsimile system. T. Chang. February 1982.
+812,"NICNAME/WHOIS. K. Harrenstien, V. White. March 1982."
+814,"Name, addresses, ports, and routes. D.D. Clark. July 1982."
+815,IP datagram reassembly algorithms. D.D. Clark. July 1982.
+816,Fault isolation and recovery. D.D. Clark. July 1982.
+818,Remote User Telnet service. J. Postel. November 1982.
+820,Assigned numbers. J. Postel. August 1982.
+821,Simple Mail Transfer Protocol. J. Postel. August 1982.
+827,Exterior Gateway Protocol (EGP). E.C. Rosen. October 1982.
+832,Who talks TCP?. D. Smallberg. December 1982.
+833,Who talks TCP?. D. Smallberg. December 1982.
+834,Who talks TCP?. D. Smallberg. December 1982.
+835,Who talks TCP?. D. Smallberg. December 1982.
+836,Who talks TCP?. D. Smallberg. January 1983.
+837,Who talks TCP?. D. Smallberg. January 1983.
+838,Who talks TCP?. D. Smallberg. January 1983.
+839,Who talks TCP?. D. Smallberg. January 1983.
+840,Official protocols. J. Postel. April 1983.
+851,ARPANET 1822L Host Access Protocol. A.G. Malis. April 1983.
+852,ARPANET short blocking feature. A.G. Malis. April 1983.
+857,"Telnet Echo Option. J. Postel, J. Reynolds. May 1983."
+859,"Telnet Status Option. J. Postel, J. Reynolds. May 1983."
+862,Echo Protocol. J. Postel. May 1983.
+863,Discard Protocol. J. Postel. May 1983.
+864,Character Generator Protocol. J. Postel. May 1983.
+865,Quote of the Day Protocol. J. Postel. May 1983.
+866,Active users. J. Postel. May 1983.
+867,Daytime Protocol. J. Postel. May 1983.
+868,"Time Protocol. J. Postel, K. Harrenstien. May 1983."
+869,Host Monitoring Protocol. R. Hinden. December 1983.
+870,"Assigned numbers. J.K. Reynolds, J. Postel. October 1983."
+872,TCP-on-a-LAN. M.A. Padlipsky. September 1982.
+873,Illusion of vendor support. M.A. Padlipsky. September 1982.
+874,Critique of X.25. M.A. Padlipsky. September 1982.
+880,"Official protocols. J.K. Reynolds, J. Postel. October 1983."
+881,Domain names plan and schedule. J. Postel. November 1983.
+885,Telnet end of record option. J. Postel. December 1983.
+887,Resource Location Protocol. M. Accetta. December 1983.
+889,Internet Delay Experiments. D.L. Mills. December 1983.
+891,DCN Local-Network Protocols. D.L. Mills. December 1983.
+900,"Assigned Numbers. J.K. Reynolds, J. Postel. June 1984."
+906,Bootstrap loading using TFTP. R. Finlayson. June 1984.
+910,Multimedia mail meeting notes. H.C. Forsdick. August 1984.
+912,Authentication service. M. St. Johns. September 1984.
+913,Simple File Transfer Protocol. M. Lottor. September 1984.
+917,Internet subnets. J.C. Mogul. October 1984.
+918,Post Office Protocol. J.K. Reynolds. October 1984.
+919,Broadcasting Internet Datagrams. J.C. Mogul. October 1984.
+923,"Assigned numbers. J.K. Reynolds, J. Postel. October 1984."
+925,Multi-LAN address resolution. J. Postel. October 1984.
+931,Authentication server. M. St. Johns. January 1985.
+932,Subnetwork addressing scheme. D.D. Clark. January 1985.
+933,Output marking Telnet option. S. Silverman. January 1985.
+935,Reliable link layer protocols. J.G. Robinson. January 1985.
+943,"Assigned numbers. J.K. Reynolds, J. Postel. April 1985."
+945,DoD statement on the NRC report. J. Postel. May 1985.
+949,FTP unique-named store command. M.A. Padlipsky. July 1985.
+951,"Bootstrap Protocol. W.J. Croft, J. Gilmore. September 1985."
+958,Network Time Protocol (NTP). D.L. Mills. September 1985.
+960,"Assigned numbers. J.K. Reynolds, J. Postel. December 1985."
+962,TCP-4 prime. M.A. Padlipsky. November 1985.
+967,All victims together. M.A. Padlipsky. December 1985.
+968,Twas the night before start-up. V.G. Cerf. December 1985.
+972,Password Generator Protocol. F.J. Wancho. January 1986.
+975,Autonomous confederations. D.L. Mills. February 1986.
+987,Mapping between X.400 and RFC 822. S.E. Kille. June 1986.
+990,"Assigned numbers. J.K. Reynolds, J. Postel. November 1986."
+996,Statistics server. D.L. Mills. February 1987.
+997,"Internet numbers. J.K. Reynolds, J. Postel. March 1987."
+1010,"Assigned numbers. J.K. Reynolds, J. Postel. May 1987."
+1018,Some comments on SQuID. A.M. McKenzie. August 1987.
+1020,"Internet numbers. S. Romano, M.K. Stahl. November 1987."
+1025,TCP and IP bake off. J. Postel. September 1987.
+1031,MILNET name domain transition. W.D. Lazear. November 1987.
+1032,Domain administrators guide. M.K. Stahl. November 1987.
+1041,Telnet 3270 regime option. Y. Rekhter. January 1988.
+1047,Duplicate messages and SMTP. C. Partridge. February 1988.
+1053,"Telnet X.3 PAD option. S. Levy, T. Jacobson. April 1988."
+1058,Routing Information Protocol. C.L. Hedrick. June 1988.
+1060,"Assigned numbers. J.K. Reynolds, J. Postel. March 1990."
+1073,Telnet window size option. D. Waitzman. October 1988.
+1079,Telnet terminal speed option. C.L. Hedrick. December 1988.
+1081,Post Office Protocol: Version 3. M.T. Rose. November 1988.
+1090,SMTP on X.25. R. Ullmann. February 1989.
+1091,Telnet terminal-type option. J. VanBokkelen. February 1989.
+1093,NSFNET routing architecture. H.W. Braun. February 1989.
+1096,Telnet X display location option. G.A. Marcy. March 1989.
+1097,Telnet subliminal-message option. B. Miller. 1 April 1989.
+1102,Policy routing in Internet protocols. D.D. Clark. May 1989.
+1104,Models of policy based routing. H.W. Braun. June 1989.
+1106,TCP big window and NAK options. R. Fox. June 1989.
+1116,Telnet Linemode option. D.A. Borman. August 1989.
+1118,Hitchhikers guide to the Internet. E. Krol. September 1989.
+1120,Internet Activities Board. V. Cerf. September 1989.
+1131,OSPF specification. J. Moy. October 1989.
+1139,Echo function for ISO 8473. R.A. Hagens. January 1990.
+1153,Digest message format. F.J. Wancho. April 1990.
+1159,Message Send Protocol. R. Nelson. June 1990.
+1160,Internet Activities Board. V. Cerf. May 1990.
+1161,SNMP over OSI. M.T. Rose. June 1990.
+1178,Choosing a name for your computer. D. Libes. August 1990.
+1179,Line printer daemon protocol. L. McLaughlin. August 1990.
+1180,"TCP/IP tutorial. T.J. Socolofsky, C.J. Kale. January 1991."
+1181,RIPE Terms of Reference. R. Blokzijl. September 1990.
+1184,Telnet Linemode Option. D.A. Borman. October 1990.
+1186,MD4 Message Digest Algorithm. R.L. Rivest. October 1990.
+1198,FYI on the X window system. R.W. Scheifler. January 1991.
+1202,Directory Assistance service. M.T. Rose. February 1991.
+1205,5250 Telnet interface. P. Chmielewski. February 1991.
+1225,Post Office Protocol: Version 3. M.T. Rose. May 1991.
+1227,SNMP MUX protocol and MIB. M.T. Rose. May 1991.
+1230,"IEEE 802.4 Token Bus MIB. K. McCloghrie, R. Fox. May 1991."
+1245,OSPF Protocol Analysis. J. Moy. July 1991.
+1246,Experience with the OSPF Protocol. J. Moy. July 1991.
+1247,OSPF Version 2. J. Moy. July 1991.
+1250,IAB Official Protocol Standards. J. Postel. August 1991.
+1258,BSD Rlogin. B. Kantor. September 1991.
+1265,BGP Protocol Analysis. Y. Rekhter. October 1991.
+1266,Experience with the BGP Protocol. Y. Rekhter. October 1991.
+1270,SNMP Communications Services. F. Kastenholz. October 1991.
+1279,X.500 and Domains. S.E. Hardcastle-Kille. November 1991.
+1280,IAB Official Protocol Standards. J. Postel. March 1992.
+1282,BSD Rlogin. B. Kantor. December 1991.
+1283,SNMP over OSI. M. Rose. December 1991.
+1285,FDDI Management Information Base. J. Case. January 1992.
+1289,DECnet Phase IV MIB Extensions. J. Saperia. December 1991.
+1296,Internet Growth (1981-1991). M. Lottor. January 1992.
+1298,"SNMP over IPX. R. Wormley, S. Bostock. February 1992."
+1299,Summary of 1200-1299. M. Kennedy. January 1997.
+1300,Remembrances of Things Past. S. Greenfield. February 1992.
+1310,The Internet Standards Process. L. Chapin. March 1992.
+1311,Introduction to the STD Notes. J. Postel. March 1992.
+1312,"Message Send Protocol 2. R. Nelson, G. Arnold. April 1992."
+1319,The MD2 Message-Digest Algorithm. B. Kaliski. April 1992.
+1320,The MD4 Message-Digest Algorithm. R. Rivest. April 1992.
+1321,The MD5 Message-Digest Algorithm. R. Rivest. April 1992.
+1333,PPP Link Quality Monitoring. W. Simpson. May 1992.
+1340,"Assigned Numbers. J. Reynolds, J. Postel. July 1992."
+1348,DNS NSAP RRs. B. Manning. July 1992.
+1350,The TFTP Protocol (Revision 2). K. Sollins. July 1992.
+1354,IP Forwarding Table MIB. F. Baker. July 1992.
+1360,IAB Official Protocol Standards. J. Postel. September 1992.
+1361,Simple Network Time Protocol (SNTP). D. Mills. August 1992.
+1364,BGP OSPF Interaction. K. Varadhan. September 1992.
+1365,An IP Address Extension Proposal. K. Siyan. September 1992.
+1373,Portable DUAs. T. Tignor. October 1992.
+1386,"The US Domain. A. Cooper, J. Postel. December 1992."
+1387,RIP Version 2 Protocol Analysis. G. Malkin. January 1993.
+1393,Traceroute Using an IP Option. G. Malkin. January 1993.
+1399,Summary of 1300-1399. J. Elliott. January 1997.
+1403,BGP OSPF Interaction. K. Varadhan. January 1993.
+1408,"Telnet Environment Option. D. Borman, Ed.. January 1993."
+1409,"Telnet Authentication Option. D. Borman, Ed.. January 1993."
+1412,Telnet Authentication: SPX. K. Alagappan. January 1993.
+1413,Identification Protocol. M. St. Johns. February 1993.
+1414,"Identification MIB. M. St. Johns, M. Rose. February 1993."
+1418,SNMP over OSI. M. Rose. March 1993.
+1419,"SNMP over AppleTalk. G. Minshall, M. Ritter. March 1993."
+1420,SNMP over IPX. S. Bostock. March 1993.
+1429,Listserv Distribute Protocol. E. Thomas. February 1993.
+1431,DUA Metrics (OSI-DS 33 (v2)). P. Barker. February 1993.
+1432,Recent Internet Books. J. Quarterman. March 1993.
+1433,"Directed ARP. J. Garrett, J. Hagan, J. Wong. March 1993."
+1460,Post Office Protocol - Version 3. M. Rose. June 1993.
+1475,TP/IX: The Next Internet. R. Ullmann. June 1993.
+1476,RAP: Internet Route Access Protocol. R. Ullmann. June 1993.
+1477,IDPR as a Proposed Standard. M. Steenstrup. July 1993.
+1480,"The US Domain. A. Cooper, J. Postel. June 1993."
+1499,Summary of 1400-1499. J. Elliott. January 1997.
+1501,OS/2 User Group. E. Brunsen. August 1993.
+1543,Instructions to RFC Authors. J. Postel. October 1993.
+1544,The Content-MD5 Header Field. M. Rose. November 1993.
+1549,"PPP in HDLC Framing. W. Simpson, Ed.. December 1993."
+1559,DECnet Phase IV MIB Extensions. J. Saperia. December 1993.
+1566,"Mail Monitoring MIB. S. Kille, N. Freed. January 1994."
+1570,"PPP LCP Extensions. W. Simpson, Ed.. January 1994."
+1572,"Telnet Environment Option. S. Alexander, Ed.. January 1994."
+1576,TN3270 Current Practices. J. Penner. January 1994.
+1577,Classical IP and ARP over ATM. M. Laubach. January 1994.
+1579,Firewall-Friendly FTP. S. Bellovin. February 1994.
+1580,Guide to Network Resource Tools. EARN Staff. March 1994.
+1583,OSPF Version 2. J. Moy. March 1994.
+1584,Multicast Extensions to OSPF. J. Moy. March 1994.
+1585,MOSPF: Analysis and Experience. J. Moy. March 1994.
+1587,"The OSPF NSSA Option. R. Coltun, V. Fuller. March 1994."
+1590,Media Type Registration Procedure. J. Postel. March 1994.
+1593,"SNA APPN Node MIB. W. McKenzie, J. Cheng. March 1994."
+1598,PPP in X.25. W. Simpson. March 1994.
+1599,Summary of 1500-1599. M. Kennedy. January 1997.
+1605,SONET to Sonnet Translation. W. Shakespeare. 1 April 1994.
+1607,A VIEW FROM THE 21ST CENTURY. V. Cerf. 1 April 1994.
+1610,Internet Official Protocol Standards. J. Postel. July 1994.
+1618,PPP over ISDN. W. Simpson. May 1994.
+1619,PPP over SONET/SDH. W. Simpson. May 1994.
+1621,Pip Near-term Architecture. P. Francis. May 1994.
+1622,Pip Header Processing. P. Francis. May 1994.
+1628,"UPS Management Information Base. J. Case, Ed.. May 1994."
+1641,"Using Unicode with MIME. D. Goldsmith, M. Davis. July 1994."
+1647,TN3270 Enhancements. B. Kelly. July 1994.
+1662,"PPP in HDLC-like Framing. W. Simpson, Ed.. July 1994."
+1663,PPP Reliable Transmission. D. Rand. July 1994.
+1672,Accounting Requirements for IPng. N. Brownlee. August 1994.
+1674,A Cellular Industry View of IPng. M. Taylor. August 1994.
+1675,Security Concerns for IPng. S. Bellovin. August 1994.
+1680,IPng Support for ATM Services. C. Brazdziunas. August 1994.
+1681,On Many Addresses per Host. S. Bellovin. August 1994.
+1685,Writing X.400 O/R Names. H. Alvestrand. August 1994.
+1688,IPng Mobility Considerations. W. Simpson. August 1994.
+1699,Summary of 1600-1699. J. Elliott. January 1997.
+1700,"Assigned Numbers. J. Reynolds, J. Postel. October 1994."
+1713,Tools for DNS debugging. A. Romao. November 1994.
+1719,A Direction for IPng. P. Gross. December 1994.
+1721,RIP Version 2 Protocol Analysis. G. Malkin. November 1994.
+1728,Resource Transponders. C. Weider. December 1994.
+1731,IMAP4 Authentication Mechanisms. J. Myers. December 1994.
+1734,POP3 AUTHentication command. J. Myers. December 1994.
+1765,OSPF Database Overflow. J. Moy. March 1995.
+1767,MIME Encapsulation of EDI Objects. D. Crocker. March 1995.
+1769,Simple Network Time Protocol (SNTP). D. Mills. March 1995.
+1773,Experience with the BGP-4 protocol. P. Traina. March 1995.
+1774,"BGP-4 Protocol Analysis. P. Traina, Ed.. March 1995."
+1775,"To Be ""On"" the Internet. D. Crocker. March 1995."
+1776,The Address is the Message. S. Crocker. 1 April 1995.
+1782,"TFTP Option Extension. G. Malkin, A. Harkin. March 1995."
+1783,"TFTP Blocksize Option. G. Malkin, A. Harkin. March 1995."
+1788,ICMP Domain Name Messages. W. Simpson. April 1995.
+1792,TCP/IPX Connection Mib Specification. T. Sung. April 1995.
+1794,DNS Support for Load Balancing. T. Brisco. April 1995.
+1808,Relative Uniform Resource Locators. R. Fielding. June 1995.
+1810,Report on MD5 Performance. J. Touch. June 1995.
+1814,Unique Addresses are Good. E. Gerich. June 1995.
+1817,CIDR and Classful Routing. Y. Rekhter. August 1995.
+1826,IP Authentication Header. R. Atkinson. August 1995.
+1846,"SMTP 521 Reply Code. A. Durand, F. Dupont. September 1995."
+1853,IP in IP Tunneling. W. Simpson. October 1995.
+1855,Netiquette Guidelines. S. Hambridge. October 1995.
+1868,ARP Extension - UNARP. G. Malkin. November 1995.
+1874,SGML Media Types. E. Levinson. December 1995.
+1875,UNINETT PCA Policy Statements. N. Berge. December 1995.
+1921,TNVIP Protocol. J. Dujonc. March 1996.
+1925,The Twelve Networking Truths. R. Callon. 1 April 1996.
+1938,"A One-Time Password System. N. Haller, C. Metz. May 1996."
+1942,HTML Tables. D. Raggett. May 1996.
+1946,Native ATM Support for ST2+. S. Jackowski. May 1996.
+1959,"An LDAP URL Format. T. Howes, M. Smith. June 1996."
+1973,PPP in Frame Relay. W. Simpson. June 1996.
+1977,PPP BSD Compression Protocol. V. Schryver. August 1996.
+1978,PPP Predictor Compression Protocol. D. Rand. August 1996.
+1979,PPP Deflate Protocol. J. Woods. August 1996.
+1982,"Serial Number Arithmetic. R. Elz, R. Bush. August 1996."
+1983,"Internet Users' Glossary. G. Malkin, Ed.. August 1996."
+1989,PPP Link Quality Monitoring. W. Simpson. August 1996.
+1995,Incremental Zone Transfer in DNS. M. Ohta. August 1996.
+2002,"IP Mobility Support. C. Perkins, Ed.. October 1996."
+2003,IP Encapsulation within IP. C. Perkins. October 1996.
+2004,Minimal Encapsulation within IP. C. Perkins. October 1996.
+2020,IEEE 802.12 Interface MIB. J. Flick. October 1996.
+2023,"IP Version 6 over PPP. D. Haskin, E. Allen. October 1996."
+2031,IETF-ISOC relationship. E. Huizer. October 1996.
+2033,Local Mail Transfer Protocol. J. Myers. October 1996.
+2053,The AM (Armenia) Domain. E. Der-Danieliantz. October 1996.
+2054,WebNFS Client Specification. B. Callaghan. October 1996.
+2055,WebNFS Server Specification. B. Callaghan. October 1996.
+2059,RADIUS Accounting. C. Rigney. January 1997.
+2066,TELNET CHARSET Option. R. Gellens. January 1997.
+2067,IP over HIPPI. J. Renwick. January 1997.
+2072,Router Renumbering Guide. H. Berkowitz. January 1997.
+2075,IP Echo Host Service. C. Partridge. January 1997.
+2076,Common Internet Message Headers. J. Palme. February 1997.
+2080,"RIPng for IPv6. G. Malkin, R. Minnear. January 1997."
+2086,IMAP4 ACL extension. J. Myers. January 1997.
+2087,IMAP4 QUOTA extension. J. Myers. January 1997.
+2088,IMAP4 non-synchronizing literals. J. Myers. January 1997.
+2090,TFTP Multicast Option. A. Emberson. February 1997.
+2096,IP Forwarding Table MIB. F. Baker. January 1997.
+2100,The Naming of Hosts. J. Ashworth. 1 April 1997.
+2113,IP Router Alert Option. D. Katz. February 1997.
+2131,Dynamic Host Configuration Protocol. R. Droms. March 1997.
+2139,RADIUS Accounting. C. Rigney. April 1997.
+2140,TCP Control Block Interdependence. J. Touch. April 1997.
+2141,URN Syntax. R. Moats. May 1997.
+2144,The CAST-128 Encryption Algorithm. C. Adams. May 1997.
+2147,TCP and UDP over IPv6 Jumbograms. D. Borman. May 1997.
+2153,PPP Vendor Extensions. W. Simpson. May 1997.
+2158,X.400 Image Body Parts. H. Alvestrand. January 1998.
+2159,A MIME Body Part for FAX. H. Alvestrand. January 1998.
+2161,A MIME Body Part for ODA. H. Alvestrand. January 1998.
+2177,IMAP4 IDLE command. B. Leiba. June 1997.
+2178,OSPF Version 2. J. Moy. July 1997.
+2179,Network Security For Trade Shows. A. Gwinn. July 1997.
+2192,IMAP URL Scheme. C. Newman. September 1997.
+2193,IMAP4 Mailbox Referrals. M. Gahrns. September 1997.
+2196,Site Security Handbook. B. Fraser. September 1997.
+2200,Internet Official Protocol Standards. J. Postel. June 1997.
+2204,ODETTE File Transfer Protocol. D. Nash. September 1997.
+2217,Telnet Com Port Control Option. G. Clark. October 1997.
+2221,IMAP4 Login Referrals. M. Gahrns. October 1997.
+2224,NFS URL Scheme. B. Callaghan. October 1997.
+2235,Hobbes' Internet Timeline. R. Zakon. November 1997.
+2243,OTP Extended Responses. C. Metz. November 1997.
+2245,Anonymous SASL Mechanism. C. Newman. November 1997.
+2249,"Mail Monitoring MIB. N. Freed, S. Kille. January 1998."
+2255,"The LDAP URL Format. T. Howes, M. Smith. December 1997."
+2258,Internet Nomenclator Project. J. Ordille. January 1998.
+2299,Request for Comments Summary. A. Ramos. January 1999.
+2300,Internet Official Protocol Standards. J. Postel. May 1998.
+2310,The Safe Response Header Field. K. Holtman. April 1998.
+2328,OSPF Version 2. J. Moy. April 1998.
+2329,OSPF Standardization Report. J. Moy. April 1998.
+2342,"IMAP4 Namespace. M. Gahrns, C. Newman. May 1998."
+2347,"TFTP Option Extension. G. Malkin, A. Harkin. May 1998."
+2348,"TFTP Blocksize Option. G. Malkin, A. Harkin. May 1998."
+2355,TN3270 Enhancements. B. Kelly. June 1998.
+2359,IMAP4 UIDPLUS extension. J. Myers. June 1998.
+2360,Guide for Internet Standards Writers. G. Scott. June 1998.
+2361,WAVE and AVI Codec Registries. E. Fleischman. June 1998.
+2365,Administratively Scoped IP Multicast. D. Meyer. July 1998.
+2370,The OSPF Opaque LSA Option. R. Coltun. July 1998.
+2376,"XML Media Types. E. Whitehead, M. Murata. July 1998."
+2384,POP URL Scheme. R. Gellens. August 1998.
+2397,"The ""data"" URL scheme. L. Masinter. August 1998."
+2399,Request for Comments Summary. A. Ramos. January 1999.
+2453,RIP Version 2. G. Malkin. November 1998.
+2468,I REMEMBER IANA. V. Cerf. October 1998.
+2472,"IP Version 6 over PPP. D. Haskin, E. Allen. December 1998."
+2476,"Message Submission. R. Gellens, J. Klensin. December 1998."
+2499,Request for Comments Summary. A. Ramos. July 1999.
+2546,"6Bone Routing Practice. A. Durand, B. Buclin. March 1999."
+2547,"BGP/MPLS VPNs. E. Rosen, Y. Rekhter. March 1999."
+2555,"30 Years of RFCs. RFC Editor, et al.. April 1999."
+2588,IP Multicast and Firewalls. R. Finlayson. May 1999.
+2595,"Using TLS with IMAP, POP3 and ACAP. C. Newman. June 1999."
+2596,"Use of Language Codes in LDAP. M. Wahl, T. Howes. May 1999."
+2615,"PPP over SONET/SDH. A. Malis, W. Simpson. June 1999."
+2620,"RADIUS Accounting Client MIB. B. Aboba, G. Zorn. June 1999."
+2621,"RADIUS Accounting Server MIB. G. Zorn, B. Aboba. June 1999."
+2624,NFS Version 4 Design Considerations. S. Shepler. June 1999.
+2629,Writing I-Ds and RFCs using XML. M. Rose. June 1999.
+2630,Cryptographic Message Syntax. R. Housley. June 1999.
+2648,A URN Namespace for IETF Documents. R. Moats. August 1999.
+2657,LDAPv2 Client vs. the Index Mesh. R. Hedberg. August 1999.
+2667,IP Tunnel MIB. D. Thaler. August 1999.
+2692,SPKI Requirements. C. Ellison. September 1999.
+2721,RTFM: Applicability Statement. N. Brownlee. October 1999.
+2734,IPv4 over IEEE 1394. P. Johansson. December 1999.
+2775,Internet Transparency. B. Carpenter. February 2000.
+2789,"Mail Monitoring MIB. N. Freed, S. Kille. March 2000."
+2790,"Host Resources MIB. S. Waldbusser, P. Grillo. March 2000."
+2791,Scalable Routing Design Principles. J. Yu. July 2000.
+2793,RTP Payload for Text Conversation. G. Hellstrom. May 2000.
+2804,"IETF Policy on Wiretapping. IAB, IESG. May 2000."
+2806,URLs for Telephone Calls. A. Vaha-Sipila. April 2000.
+2807,XML Signature Requirements. J. Reagle. July 2000.
+2808,The SecurID(r) SASL Mechanism. M. Nystrom. April 2000.
+2810,Internet Relay Chat: Architecture. C. Kalt. April 2000.
+2812,Internet Relay Chat: Client Protocol. C. Kalt. April 2000.
+2813,Internet Relay Chat: Server Protocol. C. Kalt. April 2000.
+2818,HTTP Over TLS. E. Rescorla. May 2000.
+2821,"Simple Mail Transfer Protocol. J. Klensin, Ed.. April 2001."
+2822,"Internet Message Format. P. Resnick, Ed.. April 2001."
+2828,Internet Security Glossary. R. Shirey. May 2000.
+2835,IP and ARP over HIPPI-6400 (GSN). J.-M. Pittet. May 2000.
+2839,"Internet Kermit Service. F. da Cruz, J. Altman. May 2000."
+2840,"TELNET KERMIT OPTION. J. Altman, F. da Cruz. May 2000."
+2843,"Proxy-PAR. P. Droz, T. Przygienda. May 2000."
+2852,Deliver By SMTP Service Extension. D. Newman. June 2000.
+2855,DHCP for IEEE 1394. K. Fujisawa. June 2000.
+2866,RADIUS Accounting. C. Rigney. June 2000.
+2886,Megaco Errata. T. Taylor. August 2000.
+2888,Secure Remote Access with L2TP. P. Srisuresh. August 2000.
+2894,Router Renumbering for IPv6. M. Crawford. August 2000.
+2914,Congestion Control Principles. S. Floyd. September 2000.
+2916,E.164 number and DNS. P. Faltstrom. September 2000.
+2944,Telnet Authentication: SRP. T. Wu. September 2000.
+2946,Telnet Data Encryption Option. T. Ts'o. September 2000.
+2971,IMAP4 ID extension. T. Showalter. October 2000.
+2976,The SIP INFO Method. S. Donovan. October 2000.
+2980,Common NNTP Extensions. S. Barber. October 2000.
+2981,"Event MIB. R. Kavasseri, Ed.. October 2000."
+2993,Architectural Implications of NAT. T. Hain. November 2000.
+2996,Format of the RSVP DCLASS Object. Y. Bernet. November 2000.
+3003,The audio/mpeg Media Type. M. Nilsson. November 2000.
+3005,IETF Discussion List Charter. S. Harris. November 2000.
+3014,Notification Log MIB. R. Kavasseri. November 2000.
+3026,Liaison to IETF/ISOC on ENUM. R. Blane. January 2001.
+3037,"LDP Applicability. B. Thomas, E. Gray. January 2001."
+3064,MGCP CAS Packages. B. Foster. February 2001.
+3076,Canonical XML Version 1.0. J. Boyer. March 2001.
+3081,Mapping the BEEP Core onto TCP. M. Rose. March 2001.
+3091,Pi Digit Generation Protocol. H. Kennedy. 1 April 2001.
+3112,LDAP Authentication Password Schema. K. Zeilenga. May 2001.
+3120,"A URN Namespace for XML.org. K. Best, N. Walsh. June 2001."
+3121,"A URN Namespace for OASIS. K. Best, N. Walsh. June 2001."
+3138,Extended Assignments in 233/8. D. Meyer. June 2001.
+3152,Delegation of IP6.ARPA. R. Bush. August 2001.
+3162,"RADIUS and IPv6. B. Aboba, G. Zorn, D. Mitton. August 2001."
+3164,The BSD Syslog Protocol. C. Lonvick. August 2001.
+3184,IETF Guidelines for Conduct. S. Harris. October 2001.
+3205,On the use of HTTP as a Substrate. K. Moore. February 2002.
+3217,Triple-DES and RC2 Key Wrapping. R. Housley. December 2001.
+3233,"Defining the IETF. P. Hoffman, S. Bradner. February 2002."
+3251,Electricity over IP. B. Rajagopalan. 1 April 2002.
+3271,The Internet is for Everyone. V. Cerf. April 2002.
+3282,Content Language Headers. H. Alvestrand. May 2002.
+3330,Special-Use IPv4 Addresses. IANA. September 2002.
+3344,"IP Mobility Support for IPv4. C. Perkins, Ed.. August 2002."
+3425,Obsoleting IQUERY. D. Lawrence. November 2002.
+3516,IMAP4 Binary Content Extension. L. Nerenberg. April 2003.
+3534,The application/ogg Media Type. L. Walleij. May 2003.
+3559,Multicast Address Allocation MIB. D. Thaler. June 2003.
+3620,The TUNNEL Profile. D. New. October 2003.
+3621,"Power Ethernet MIB. A. Berger, D. Romascanu. December 2003."
+3659,Extensions to FTP. P. Hethmon. March 2007.
+3667,IETF Rights in Contributions. S. Bradner. February 2004.
+3675,.sex Considered Dangerous. D. Eastlake 3rd. February 2004.
+3688,The IETF XML Registry. M. Mealling. January 2004.
+3710,An IESG charter. H. Alvestrand. February 2004.
+3774,"IETF Problem Statement. E. Davies, Ed.. May 2004."
+3808,IANA Charset MIB. I. McDonald. June 2004.
+3827,Additional Snoop Datalink Types. K. Sarcar. June 2004.
+3852,Cryptographic Message Syntax (CMS). R. Housley. July 2004.
+3887,Message Tracking Query Protocol. T. Hansen. September 2004.
+3912,WHOIS Protocol Specification. L. Daigle. September 2004.
+3938,Video-Message Message-Context. T. Hansen. October 2004.
+3970,A Traffic Engineering (TE) MIB. K. Kompella. January 2005.
+3978,"IETF Rights in Contributions. S. Bradner, Ed.. March 2005."
+4027,Domain Name System Media Types. S. Josefsson. April 2005.
+4044,Fibre Channel Management MIB. K. McCloghrie. May 2005.
+4048,RFC 1888 Is Obsolete. B. Carpenter. April 2005.
+4068,"Fast Handovers for Mobile IPv6. R. Koodli, Ed.. July 2005."
+4087,IP Tunnel MIB. D. Thaler. June 2005.
+4101,"Writing Protocol Models. E. Rescorla, IAB. June 2005."
+4134,"Examples of S/MIME Messages. P. Hoffman, Ed.. July 2005."
+4146,Simple New Mail Notification. R. Gellens. August 2005.
+4151,"The 'tag' URI Scheme. T. Kindberg, S. Hawke. October 2005."
+4155,The application/mbox Media Type. E. Hall. September 2005.
+4156,The wais URI Scheme. P. Hoffman. August 2005.
+4157,The prospero URI Scheme. P. Hoffman. August 2005.
+4159,"Deprecation of ""ip6.int"". G. Huston. August 2005."
+4204,"Link Management Protocol (LMP). J. Lang, Ed.. October 2005."
+4217,Securing FTP with TLS. P. Ford-Hutchinson. October 2005.
+4238,Voice Message Routing Service. G. Vaudreuil. October 2005.
+4248,The telnet URI Scheme. P. Hoffman. October 2005.
+4264,"BGP Wedgies. T. Griffin, G. Huston. November 2005."
+4266,The gopher URI Scheme. P. Hoffman. November 2005.
+4268,"Entity State MIB. S. Chisholm, D. Perkins. November 2005."
+4274,"BGP-4 Protocol Analysis. D. Meyer, K. Patel. January 2006."
+4292,IP Forwarding Table MIB. B. Haberman. April 2006.
+4294,"IPv6 Node Requirements. J. Loughney, Ed.. April 2006."
+4302,IP Authentication Header. S. Kent. December 2005.
+4308,Cryptographic Suites for IPsec. P. Hoffman. December 2005.
+4329,Scripting Media Types. B. Hoehrmann. April 2006.
+4374,The application/xv+xml Media Type. G. McCobb. January 2006.
+4413,"TCP/IP Field Behavior. M. West, S. McCann. March 2006."
+4441,"The IEEE 802/IETF Relationship. B. Aboba, Ed.. March 2006."
+4468,Message Submission BURL Extension. C. Newman. May 2006.
+4479,A Data Model for Presence. J. Rosenberg. July 2006.
+4498,The Managed Object Aggregation MIB. G. Keeni. May 2006.
+4524,"COSINE LDAP/X.500 Schema. K. Zeilenga, Ed.. June 2006."
+4597,"Conferencing Scenarios. R. Even, N. Ismail. August 2006."
+4645,Initial Language Subtag Registry. D. Ewell. September 2006.
+4685,Atom Threading Extensions. J. Snell. September 2006.
+4693,IETF Operational Notes. H. Alvestrand. October 2006.
+4708,CellML Media Type. A. Miller. October 2006.
+4794,RFC 1264 Is Obsolete. B. Fenner. December 2006.
+4808,Key Change Strategies for TCP-MD5. S. Bellovin. March 2007.
+4833,"Timezone Options for DHCP. E. Lear, P. Eggert. April 2007."
+4863,"Wildcard Pseudowire Type. L. Martini, G. Swallow. May 2007."
+4903,Multi-Link Subnet Issues. D. Thaler. June 2007.
+4912,Abstract Syntax Notation X (ASN.X). S. Legg. July 2007.
+4926,"A URN Namespace for GEANT. T.Kalin, M.Molina. July 2007."
+4946,Atom License Extension. J. Snell. July 2007.
+4955,DNS Security (DNSSEC) Experiments. D. Blacka. July 2007.
+4978,The IMAP COMPRESS Extension. A. Gulbrandsen. August 2007.
+5000,Internet Official Protocol Standards. RFC Editor. May 2008.
+5005,Feed Paging and Archiving. M. Nottingham. September 2007.
+5025,Presence Authorization Rules. J. Rosenberg. December 2007.
+5117,"RTP Topologies. M. Westerlund, S. Wenger. January 2008."
+5156,Special-Use IPv6 Addresses. M. Blanchet. April 2008.
+5211,An Internet Transition Plan. J. Curran. July 2008.
+5227,IPv4 Address Conflict Detection. S. Cheshire. July 2008.
+5267,"Contexts for IMAP4. D. Cridland, C. King. July 2008."
+5268,"Mobile IPv6 Fast Handovers. R. Koodli, Ed.. June 2008."
+5308,Routing IPv6 with IS-IS. C. Hopps. October 2008.
+5321,Simple Mail Transfer Protocol. J. Klensin. October 2008.
+5322,"Internet Message Format. P. Resnick, Ed.. October 2008."
+5403,RPCSEC_GSS Version 2. M. Eisler. February 2009.
+5424,The Syslog Protocol. R. Gerhards. March 2009.
+5460,DHCPv6 Bulk Leasequery. M. Stapp. February 2009.
+5461,TCP's Reaction to Soft Errors. F. Gont. February 2009.
+5464,The IMAP METADATA Extension. C. Daboo. February 2009.
+5482,"TCP User Timeout Option. L. Eggert, F. Gont. March 2009."
+5514,IPv6 over Social Networks. E. Vyncke. 1 April 2009.
+5530,IMAP Response Codes. A. Gulbrandsen. May 2009.
+5535,Hash-Based Addresses (HBA). M. Bagnulo. June 2009.
+5540,40 Years of RFCs. RFC Editor. April 2009.
+5568,"Mobile IPv6 Fast Handovers. R. Koodli, Ed.. July 2009."
+5581,The Camellia Cipher in OpenPGP. D. Shaw. June 2009.
+5598,Internet Mail Architecture. D. Crocker. July 2009.
+5674,"Alarms in Syslog. S. Chisholm, R. Gerhards. October 2009."
+5697,Other Certificates Extension. S. Farrell. November 2009.
+5738,"IMAP Support for UTF-8. P. Resnick, C. Newman. March 2010."
+5782,DNS Blacklists and Whitelists. J. Levine. February 2010.
+5789,"PATCH Method for HTTP. L. Dusseault, J. Snell. March 2010."
+5849,"The OAuth 1.0 Protocol. E. Hammer-Lahav, Ed.. April 2010."
+5864,DNS SRV Resource Records for AFS. R. Allbery. April 2010.
+5916,Device Owner Attribute. S. Turner. June 2010.
+5917,Clearance Sponsor Attribute. S. Turner. June 2010.
+5927,ICMP Attacks against TCP. F. Gont. July 2010.
+5958,Asymmetric Key Packages. S. Turner. August 2010.
+5967,The application/pkcs10 Media Type. S. Turner. August 2010.
+5988,Web Linking. M. Nottingham. October 2010.
+6013,TCP Cookie Transactions (TCPCT). W. Simpson. January 2011.
+6025,"ASN.1 Translation. C. Wallace, C. Gardiner. October 2010."
+6027,IPsec Cluster Problem Statement. Y. Nir. October 2010.
+6081,Teredo Extensions. D. Thaler. January 2011.
+6111,Additional Kerberos Naming Constraints. L. Zhu. April 2011.
+6126,The Babel Routing Protocol. J. Chroboczek. April 2011.
+6149,"MD2 to Historic Status. S. Turner, L. Chen. March 2011."
+6150,"MD4 to Historic Status. S. Turner, L. Chen. March 2011."
+6166,A Registry for PIM Message Types. S. Venaas. April 2011.
+6203,IMAP4 Extension for Fuzzy Search. T. Sirainen. March 2011.
+6213,"IS-IS BFD-Enabled TLV. C. Hopps, L. Ginsberg. April 2011."
+6250,Evolution of the IP Model. D. Thaler. May 2011.
+6265,HTTP State Management Mechanism. A. Barth. April 2011.
+6270,The 'tn3270' URI Scheme. M. Yevstifeyev. June 2011.
+6303,Locally Served DNS Zones. M. Andrews. July 2011.
+6304,"AS112 Nameserver Operations. J. Abley, W. Maton. July 2011."
+6306,Hierarchical IPv4 Framework. P. Frejborg. July 2011.
+6331,Moving DIGEST-MD5 to Historic. A. Melnikov. July 2011.
+6350,vCard Format Specification. S. Perreault. August 2011.
+6351,xCard: vCard XML Representation. S. Perreault. August 2011.
+6360,Conclusion of FYI RFC Sub-Series. R. Housley. August 2011.
+6450,Multicast Ping Protocol. S. Venaas. December 2011.
+6454,The Web Origin Concept. A. Barth. December 2011.
+6473,vCard KIND:application. P. Saint-Andre. December 2011.
+6547,RFC 3627 to Historic Status. W. George. February 2012.
+6556,Testing Eyeball Happiness. F. Baker. April 2012.
+6588,A URN Namespace for ucode. C. Ishikawa. April 2012.
+6592,The Null Packet. C. Pignataro. 1 April 2012.
+6596,"The Canonical Link Relation. M. Ohye, J. Kupke. April 2012."
+6613,RADIUS over TCP. A. DeKok. May 2012.
+6621,"Simplified Multicast Forwarding. J. Macker, Ed.. May 2012."
+6665,SIP-Specific Event Notification. A.B. Roach. July 2012.
+6673,Round-Trip Packet Loss Metrics. A. Morton. August 2012.
+6689,Usage of the RSVP ASSOCIATION Object. L. Berger. July 2012.
+6694,"The ""about"" URI Scheme. S. Moonesamy, Ed.. August 2012."
+6721,"The Atom ""deleted-entry"" Element. J. Snell. September 2012."
+6762,"Multicast DNS. S. Cheshire, M. Krochmal. February 2013."
+6828,Content Splicing for RTP Sessions. J. Xia. January 2013.
+6892,The 'describes' Link Relation Type. E. Wilde. March 2013.
+6903,Additional Link Relation Types. J. Snell. March 2013.
+6906,The 'profile' Link Relation Type. E. Wilde. March 2013.
+6946,"Processing of IPv6 ""Atomic"" Fragments. F. Gont. May 2013."
+6991,"Common YANG Data Types. J. Schoenwaelder, Ed.. July 2013."
+7095,jCard: The JSON Format for vCard. P. Kewisch. January 2014.
+7154,"IETF Guidelines for Conduct. S. Moonesamy, Ed.. March 2014."
+7164,"RTP and Leap Seconds. K. Gross, R. Brandenburg. March 2014."
+7198,"Duplicating RTP Streams. A. Begen, C. Perkins. April 2014."
+7204,Requirements for Labeled NFS. T. Haynes. April 2014.
+7224,IANA Interface Type YANG Module. M. Bjorklund. May 2014.
+7240,Prefer Header for HTTP. J. Snell. June 2014.
+7249,Internet Numbers Registries. R. Housley. May 2014.
+7259,The Jabber-ID Header Field. P. Saint-Andre. May 2014.
+7284,The Profile URI Registry. M. Lanthaler. June 2014.
+7288,Reflections on Host Firewalls. D. Thaler. June 2014.
+7303,"XML Media Types. H. Thompson, C. Lilley. July 2014."
+7320,URI Design and Ownership. M. Nottingham. July 2014.
+7322,"RFC Style Guide. H. Flanagan, S. Ginoza. September 2014."
+7335,IPv4 Service Continuity Prefix. C. Byrne. August 2014.
+7346,IPv6 Multicast Address Scopes. R. Droms. August 2014.
+7386,"JSON Merge Patch. P. Hoffman, J. Snell. October 2014."
+7396,"JSON Merge Patch. P. Hoffman, J. Snell. October 2014."
+7440,TFTP Windowsize Option. P. Masotta. January 2015.
+7465,Prohibiting RC4 Cipher Suites. A. Popov. February 2015.
+7493,"The I-JSON Message Format. T. Bray, Ed.. March 2015."
+7503,"OSPFv3 Autoconfiguration. A. Lindem, J. Arkko. April 2015."
+7504,SMTP 521 and 556 Reply Codes. J. Klensin. June 2015.
+7511,Scenic Routing for IPv6. M. Wilhelm. 1 April 2015.
+7517,JSON Web Key (JWK). M. Jones. May 2015.
+7518,JSON Web Algorithms (JWA). M. Jones. May 2015.
+7542,The Network Access Identifier. A. DeKok. May 2015.
+7565,The 'acct' URI Scheme. P. Saint-Andre. May 2015.
+7626,DNS Privacy Considerations. S. Bortzmeyer. August 2015.
+7664,"Dragonfly Key Exchange. D. Harkins, Ed.. November 2015."
+7667,"RTP Topologies. M. Westerlund, S. Wenger. November 2015."
+7763,The text/markdown Media Type. S. Leonard. March 2016.
+7827,The Role of the IRTF Chair. L. Eggert. March 2016.
+7830,The EDNS(0) Padding Option. A. Mayrhofer. May 2016.
+7848,Mark and Signed Mark Objects Mapping. G. Lozano. June 2016.
+7869,"The ""vnc"" URI Scheme. D. Warden, I. Iordanov. May 2016."
+7901,CHAIN Query Requests in DNS. P. Wouters. June 2016.
+7903,Windows Image Media Types. S. Leonard. September 2016.
+7913,P-Access-Network-Info ABNF Update. C. Holmberg. June 2016.
+7944,Diameter Routing Message Priority. S. Donovan. August 2016.
+7953,"Calendar Availability. C. Daboo, M. Douglass. August 2016."
+7986,New Properties for iCalendar. C. Daboo. October 2016.
+7990,RFC Format Framework. H. Flanagan. December 2016.
+8044,Data Types in RADIUS. A. DeKok. January 2017.
+8069,URN Namespace for IEEE. A. Thomas. February 2017.
+8081,"The ""font"" Top-Level Media Type. C. Lilley. February 2017."
+8089,"The ""file"" URI Scheme. M. Kerwin. February 2017."
+8142,GeoJSON Text Sequences. S. Gillies. April 2017.
+8188,Encrypted Content-Encoding for HTTP. M. Thomson. June 2017.
+8207,BGPsec Operational Considerations. R. Bush. September 2017.
+8216,"HTTP Live Streaming. R. Pantos, Ed., W. May. August 2017."
+8246,HTTP Immutable Responses. P. McManus. September 2017.
+8288,Web Linking. M. Nottingham. October 2017.
+8291,Message Encryption for Web Push. M. Thomson. November 2017.
+8427,Representing DNS Messages in JSON. P. Hoffman. July 2018.
+8438,IMAP Extension for STATUS=SIZE. S. Bosch. August 2018.
