@@ -5,13 +5,12 @@ import html.parser
 import util
 
 
-CSS3_URL = "https://www.w3.org/TR/css-color-3/"
-CSS3_CACHE = "color-css3.html"
-
+URL = "https://www.w3.org/TR/css-color-3/"
+CACHE = "color-css3.html"
 COLUMNS = ["Web", "Hex6", "R,G,B"]
 
 
-class CSS3SpecificationParser(html.parser.HTMLParser):
+class Parser(html.parser.HTMLParser):
     def __init__(self):
         super().__init__()
         self.colors = {}
@@ -38,15 +37,11 @@ class CSS3SpecificationParser(html.parser.HTMLParser):
                     self.thiscolor = []
 
 
-def scrape_css3():
-    parser = CSS3SpecificationParser()
-    parser.feed(open(util.get_cache_file(CSS3_CACHE, CSS3_URL)).read())
-    return parser.colors
-
-
-def scrape_all():
-    return [(a, b, c) for a, (b, c) in sorted(scrape_css3().items())]
+def scrape():
+    parser = Parser()
+    parser.feed(open(util.get_cache_file(CACHE, URL)).read())
+    return [(a, b, c) for a, (b, c) in sorted(parser.colors.items())]
 
 
 if __name__ == "__main__":
-    util.write_csv(COLUMNS, scrape_all())
+    util.write_csv(COLUMNS, scrape())
