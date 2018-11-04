@@ -23,7 +23,7 @@ def cleanup_table_column(s):
 def scrape():
     j = json.load(open(util.get_cache_file(CACHE, URL)))
     for line in j["parse"]["wikitext"]["*"].splitlines():
-        if re.match(r"\| \[\[(\.[a-z]+)\]\] \|\|", line):
+        if re.match(r"\| \[\[\.[a-z]+\]\] \|\|", line):
             columns = line[1:].split("||")
             yield list(map(cleanup_table_column, columns[:2]))
 
