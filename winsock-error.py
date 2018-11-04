@@ -5,16 +5,9 @@ import html.parser
 import util
 
 
-CACHE = "msdn.html"
 URL = "https://docs.microsoft.com/en-us/windows/desktop/winsock/windows-sockets-error-codes-2"
-
+CACHE = "msdn.html"
 COLUMNS = ["Name", "Code", "Message"]
-
-
-def fixup(row):
-    if row[0] == "WSA_IO_PENDING":
-        return row + ["Overlapped operations will complete later."]
-    return row
 
 
 class Parser(html.parser.HTMLParser):
@@ -33,12 +26,13 @@ class Parser(html.parser.HTMLParser):
             self.in_dt = False
 
     def handle_data(self, data):
-        is_first = data.startswith("WS")
         if self.in_dt:
-            if len(self.row) == 3 or (self.row and is_first):
-                self.rows.append(fixup(self.row))
+            if len(self.row) == 2 and self.row[0] == "WSA_IO_PENDING":
+                self.row.append("Overlapped operations will complete later.")
+            if len(self.row) == 3:
+                self.rows.append(self.row)
                 self.row = []
-            if is_first or self.row:
+            if self.row or data.startswith("WS"):
                 self.row.append(data)
 
 
