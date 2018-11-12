@@ -1,13 +1,12 @@
 #! /usr/bin/env python3
 
-import json
 import re
 
 import util
 
 
-URL = "https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext&format=json&page=List_of_Internet_top-level_domains"
-CACHE = "api.json"
+URL = "https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains?action=raw"
+CACHE = "article.wiki"
 COLUMNS = ["Domain", "Description"]
 
 
@@ -21,8 +20,7 @@ def cleanup_table_column(s):
 
 
 def scrape():
-    j = json.load(open(util.get_cache_file(CACHE, URL)))
-    for line in j["parse"]["wikitext"]["*"].splitlines():
+    for line in open(util.get_cache_file(CACHE, URL)):
         if re.match(r"\| \[\[\.[a-z]+\]\] \|\|", line):
             columns = line[1:].split("||")
             yield list(map(cleanup_table_column, columns[:2]))

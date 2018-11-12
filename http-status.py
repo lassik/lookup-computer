@@ -1,19 +1,17 @@
 #! /usr/bin/env python3
 
-import json
 import re
 
 import util
 
 
-URL = "https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext&format=json&page=List_of_HTTP_status_codes"
-CACHE = "api.json"
+URL = "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes?action=raw"
+CACHE = "article.wiki"
 COLUMNS = ["Code", "Message"]
 
 
 def scrape():
-    j = json.load(open(util.get_cache_file(CACHE, URL)))
-    for line in j["parse"]["wikitext"]["*"].splitlines():
+    for line in open(util.get_cache_file(CACHE, URL)):
         m = re.match(r"^;\{\{.*?\}\}(\d{3}) (.*?)\s*$", line)
         if m:
             yield m.group(1), m.group(2).replace("[[", "").replace("]]", "")
