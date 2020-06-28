@@ -19,6 +19,7 @@ OS = [
     ("OpenBSD", ["openbsd/src/master/sys/sys/errno.h"]),
     ("NetBSD", ["netbsd/src/trunk/sys/sys/errno.h"]),
     ("Solaris", ["kofemann/opensolaris/master/usr/src/uts/common/sys/errno.h"]),
+    ("Darwin", ["apple/darwin-xnu/master/bsd/sys/errno.h"]),
 ]
 
 COLUMNS = ["Name"] + [os[0] for os in OS] + ["Message"]
