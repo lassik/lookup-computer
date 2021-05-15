@@ -1,0 +1,130 @@
+Char,Name,Origin,Comment
+a,ANONYMOUS,RFC2811,"Marks the channel to use anonymous conversations. All conversations, and people joining/parting are viewed all from 'anonymous!anonymous@anonymous'. Users quitting are seen as users parting the channel with no reason.
+"
+a,HIDEOPS,Hybrid,Anonymous operators - channel operators a hidden
+a,CHANNEL_PROTECTION,Unreal,"Gives the given nickname 'protection'; Cannot be kicked/deopped
+"
+A,ADMIN_ONLY,Unreal,"Only server/service/network (co-)administrators can join the channel
+"
+A,ALLOW_INVITE,InspIRCd,"Allow everyone to use INVITE, even non-privileged users"
+b,BAN,RFC1459,Bans the specified mask from the channel
+B,BLOCKCAPS,InspIRCd,Block messages with too many CAPITAL LETTERS.
+c,NOCONTROL,Hybrid?,"Stops control codes from being broadcast from the channel.
+"
+c,NOCOLOUR,Bahamut,"Stops color from being broadcast from the channel. Some implementations drop lines, some implementations strip it.
+"
+C,NO_CTCP,Unreal,Stops people from sending CTCP commands to the channel
+d,DELAYMSG,InspIRCd,"Disallows a user from talking in the channel until they've been in there for the specified number of seconds.
+"
+d,DENY,,"Like ban, but apparently bans through matching the given one- word mask to the 'irc-name' or 'real name' field a client has.
+"
+d,HAS_HIDDEN,QuakeNet,"Set by the server when the channel mode +D (on QuakeNet) was removed, but there are still 'hidden' users in the channel
+"
+D,DELAYJOINS,QuakeNet,"When set, all joins are hidden until the user is given a voice, oper status, until they speak, or change a topic etc.
+"
+e,BAN_EXCEPTION,RFC2811,"Creates a ban exception using the given mask. Normally, if someone's identity fits a channel ban mask, they are banned. If their identity also matches the ban exception mask, they are allowed not banned (exempt from the ban)
+"
+e,EVENT,AustHex,"Stops users from changing their nicknames when set. AustNet considers this obsolete, due to the conflict between the more widely accepted use of the 'e' mode.
+"
+f,FLOOD_LIMIT,Unreal,Flood limiter
+f,FORWARD,Charybdis?,"Forwards users who cannot join because of +i, +j, +l or +r to the given channel.
+"
+F,FREE_TARGET,Charybdis?,"Anyone may set FORWARDs to this channel (otherwise, ops are necessary)
+"
+F,NICKFLOOD,InspIRCd,"Only allow <num> nick changes per <sec> seconds, to stop spam."
+g,CHANFILTER,InspIRCd,Blocks messages matching <keyword> (including wildcards).
+g,FREE_INVITE,Charybdis?,Everyone may invite users
+G,STRIP_BAD_WORDS,Unreal,"Strips profanity from messages broadcast through the channel
+"
+h,HALFOP,RFC2811,Gives the specified nickname channel half-operator status
+H,HISTORY,InspIRCd,"When users join, show them <num> lines or <sec> seconds of channel history, whichever is shorter.
+"
+H,NO_HIDING,Unreal,"When set, this stops users set umode +I (INVISIBLE_JOINPART) from being able to join or part a channel secretly
+"
+i,INVITE_ONLY,RFC1459,"Marks the channel as invite only. When set, clients must be invited using the INVITE command prior to being allowed to join the channel
+"
+I,INVITATION_MASK,RFC2811,"If the channel is marked as invite only, users matching the mask(s) set using this mode are allowed to enter without invitation. Also called ""invite exempt""
+"
+j,JOIN_THROTTLE,Charybdis?,"When set, 'count' number of users may join this channel per 'time'
+"
+J,JOIN_THROTTLE,Dancer,"When set, users may join this channel once every 'frequency' seconds with an initial burst and limit value of 'limit' users
+"
+J,KICK_NOREJOIN,InspIRCd,"After being KICKed, user can't rejoin for <sec> seconds."
+k,KEYLOCK,RFC1459,"Locks the channel with the given password, which must be specified via the JOIN command to any clients attempting to join the channel when set. The correct key must be given when turning this mode off.
+"
+K,NOKNOCK,Unreal,Disables people using KNOCK on the channel
+l,LIMIT,RFC1459,"Limits the channel to only allow the given number of members to be in the channel while the mode is set. Nobody else is allowed to join the channel while the channel membership count is greater than or equal to the number given with the mode, however some implementations allow IRC operators to circumvent that rule. Most traditional implementations accept only a signed integer here (using atoi()), however some more modern implementations may accept an unsigned integer (i.e. strtoul()), or even have machine variations on whether a 32-bit or 64-bit integer is accepted.
+"
+L,LISTED,Bahamut,
+L,LINK,Unreal,"Forwards users cannot join a channel for some reason (+b, +i, +l, +R, +z, ...), tothe given channel.
+"
+L,LARGE_BANLIST,Charybdis?,"Increase the number of +beIq entries allowed for this channel. Only settable by IRC opers
+"
+m,MODERATED,RFC1459,"The channel is being moderated. Only users who have a voice are able to talk (people who are voiced or channel operator members)
+"
+M,MODREG,Bahamut,"Unregistered/unidentified clients cannot send text to the channel
+"
+M,NOOPERKICK,ircd-seven,"Disallows kicking an oper from the channel. Only settable by IRC opers.
+"
+M,REGONLY,Unreal,Channel only allows registered nicknames to talk.
+n,NO_EXTERNAL,Hybrid?,"Only allow users who are joined to this channel to send messages to the channel
+"
+N,NO_NICK_CHANGE,Unreal,"Disallow nickname changes. This is similar to AustHex's obsolete +e ('event') mode
+"
+o,OPER,RFC1459,Gives the specified nickname channel operator status
+O,CREATOR,RFC2811,Give the specified nickname channel creator status
+O,OPER_ONLY,"Bahamut, Unreal",Channel only allows IRC operators to join
+p,PRIVATE,RFC1459,"Marks the channel as private. Using this form, +p cannot be set with +s at the same time. Setting +p while +s is set turns off +s, and vice-versa. This is widely considered obsolete in favor of the secret mode (+s).
+"
+p,PRIVATE,Hybrid,"This restricts KNOCK, and prevents half-ops from using +h"
+p,PRIVATE,Charybdis?,This restricts KNOCK
+p,PARANOIA,Hybrid,"Controls whether half-ops may invite users into the channel or whether they can kick other members of the channel
+"
+P,PERMANENT,Charybdis?,"Channel does not disappear when empty. Only settable by IRC opers
+"
+q,QUIET,Charybdis?,"Prevents a user from sending to the channel or changing nick, based on a nickmask match
+"
+q,QUIET,RFC2811,"Sets the channel to be quiet. When set, it restricts what is sent to clients who are on the channel. Joins, parts, and nick changes are not broadcast. From the user's point of view, the channel only contains one user (them).
+"
+q,CHANNEL_OWNER,Unreal,Gives the nickname channel owner status
+Q,NO_KICK,Unreal,Disallow people being kicked from the channel
+Q,NO_FORWARD,Charybdis?,Users cannot be forwarded to this channel
+r,REGISTERED,Bahamut,Channel is registered with a network channel service
+r,REOP,RFC2811,"This mode is used to prevent a channel from having no operator for an extended period of time. When set, any channel that has lost all its channel operators for a certain period of time automatically has some or all channel members given channel operator status. RFC2811 specifies this is only available to '!' channels, but some implementations are reported to use it on other channel types, since they use timestamping to avoid channel take-overs during network splits.
+"
+r,REGONLY,ircu,Channel only allows registered nicknames to join/talk.
+R,REGONLY,"Bahamut, tr-ircd",Channel only allows registered nicknames to join/talk
+R,REGONLY,Hybrid?,Channel only allows registered nicknames to join
+R,REOP_LIST,IRCNet,"Re-oper list - a list of identities used as a hint for reop when a channel is opless for a long enough time. Only one of the matches is used for the reop.
+"
+s,SECRET,RFC1459,"Marks the channel as secret. The channel will not appear in channel listings, the NAMES command will not list nicknames for users who are not channel members, and the channel will not appear in WHOIS unless WHOIS is called by a fellow channel member.
+"
+S,STRIP,Unreal,Strip formatting codes from messages sent to the channel
+S,SECURED_ONLY,Hybrid?,"Only allows clients connected via secure connections to join (eg. TLS). See also +z SECUREONLY.
+"
+t,TOPIC_LOCK,RFC1459,"Topic is locked, and can only be changed by channel operators
+"
+T,NO_NOTICE,Charybdis?,No NOTICEs can be sent to this channel
+u,AUDITORIUM,Unreal,"When set, makes /names and /who only show channel operators"
+u,FOUNDER,tr-ircd,Gives the specified nickname 'founder' status.
+u,NOQUITPARTS,QuakeNet,"When set, this hides all part messages (no part reasons are broadcast) and all quit reasons are simply replaced with a generic string such as \
+"
+v,VOICE,RFC1459,"Gives the specified nickname a voice. The user may then speak when the channel is being moderated (+m).
+"
+V,NO_INVITE,Unreal,Stop channel members inviting people
+w,AUTO_OP,InspIRCd,"Users that match the given mask will have the given modes when they join the channel.
+"
+X,EXEMPT_CHANOPS,InspIRCd,"Lets users who have the given permission flag (or above) bypass certain restrictions
+"
+y,OPER_PREFIX,InspIRCd,"Marks a user as an oper in the channel with a defined prefix in front of their nick.
+"
+Y,OJOIN,InspIRCd,"Marks a user as an oper in the channel with a defined prefix in front of their nick, when an IRC oper issues the OJOIN command.
+"
+z,SECUREONLY,Unreal,"Only allows clients connected via secure connections to join (eg. TLS). See also +S SECURED_ONLY.
+"
+z,OP_MODERATED,Charybdis?,"Messages blocked by +m, +b, and +q are instead sent to ops
+"
+Z,NAMED_MODES,InspIRCd,"Allows the display and modification of channel modes with long-form names.
+"
+Z,ISSECURE,Unreal,"All users currently in the channel are connected through SSL (set and unset as users part and join)
+"
